@@ -1,0 +1,55 @@
+/*	Nama	=Ikko cahya Awinata
+	Kelas	= TI A 2022
+	NIM		= 22051204038
+	Matkul	= Pemdas (Pert-4 Program Membuat Username & Password)
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	cout<<"Nama		= Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas		= TI A 2022"<<endl;
+	cout<<"NIM		= 22051204038"<<endl;
+	cout<<"=============================="<<endl;
+	int i; 
+	string user, pass, login, x,y,z;
+
+cout<<"Silahkan Buat Akun Dulu yah"<<endl;
+cout<<"Username"<<endl;
+cin>>user;
+cout<<"Password"<<endl;
+cin>>pass;
+system("cls");
+cout<<"Akun Sudah Dibuat, Silakan Login Untuk Masuk"<<endl;
+	do{
+		cout<<"Username"<<endl; cin>>x;
+		cout<<"Password"<<endl; cin>>y;
+		
+		if(x==user && y==pass){
+			login="Berhasil";
+			cout<<"YEYY ANDA BERHASIL LOGIN"<<endl;
+			cout<<"========================================================"<<endl;
+			cout<<"Coba Anda Masukkan Username & Password yang tidak sesuai sebanyak 3 kali"<<endl;
+		}else if(x!=user && y!=pass){
+			cout<<"Username atau Password Anda Salah"<<endl;
+			i++;
+		}	
+			
+		}	
+		
+	
+	while (i<=3);
+	if(login=="berhasil"){
+			system("cls");
+		cout<<"YEEYY ANDA TELAH BERHASIL LOGIN"<<endl;
+		}else {
+		cout<<"Anda Telah 3x Salah Username & Password "<<endl;
+		cout<<"Maaf Akun Anda Kami Blokir Sementara"<<endl;
+		cout<<"Untuk Lebih lanjut, Hubungi Nomor Dia. Jika Tidak Ada Respon Lebih Baik Mundur Saja."<<endl;}
+		cout<<"Sekian Dan Terima Kasih"<<endl;
+	
+	
+	}
+
+	
+
+	

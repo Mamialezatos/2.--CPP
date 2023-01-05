@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+ int main(){
+ 	cout<<"Nama 	: Ikko Cahya awinata"<<endl;
+ 	cout<<"Kelas	: TI A 2022"<<endl;
+ 	cout<<"NIM	: 22051204038"<<endl;
+ 	cout<<"Matkul	: Pemdas Pert. 6-7 (Program WHILE)"<<endl;
+ 
+ 
+  cout<<"PERULANGAN WHILE"<<endl;
+ 
+ 	int n =1;
+ 	
+ 	while (n <= 5){
+ 		cout<< n << ". Halo" <<endl;
+ 		n++;
+	 }
+		cout<<"Sekian Program Dari Saya. Terima Kasih"<<endl;
+ }

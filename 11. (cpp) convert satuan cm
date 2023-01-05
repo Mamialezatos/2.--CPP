@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+main (){
+	int pjg, m, cm;
+		cout<<"masukan nilai = "<<endl;
+		cin>>pjg;
+		
+		m= pjg*0.10;
+		cm = pjg * 100;
+		
+		cout<<"hasil dari panjang " << pjg << " centimeter adalah = "<<m<<" m "<<endl;
+		cout<<"hasil dari panjang " << pjg << " meter adalah = "<<cm<<" cm "<<endl;
+	}

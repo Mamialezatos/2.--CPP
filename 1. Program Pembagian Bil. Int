@@ -1,0 +1,39 @@
+//Nama		: Ikko Cahya Awinata
+//Kelas		: TI A 2022
+//NIM		: 22051204038
+//Matkul	: Pemdas (latihan Membandingkan Bilangan Int. dan mengeluarkan pesan yg mana bil. lebih kecil)
+
+#include<iostream>
+using namespace std;
+
+int main (){
+	float a,b;
+	
+	cout<<"Nama	= Ikko cahya Awinata"<<endl;
+	cout<<"Kelas	= TI A 2022"<<endl;
+	cout<<"NIM	= 22051204038"<<endl;
+	cout<<"========Membandingkan Bilangan Integer========"<<endl;
+
+
+	//value
+	cout<<"Masukkan Nilai Integer A="<<endl;
+	cin>>a;
+	
+	cout<<"Masukkan Nilai Integer B="<<endl;
+	cin>>b;
+	
+	
+	//pernyataan
+	if(b>a)
+	cout<<"Nilai A kurang dari nilai B"<<endl;
+	
+	else if(a>b)
+	cout<<"Nilai A lebih besar dari nilai B"<<endl;
+	
+	else if(a=b)
+	cout<<"Nilai A sama dengan nilai B"<<endl;
+	
+	
+}
+
+

@@ -1,0 +1,95 @@
+#include <iostream>
+#include <string.h>
+#include <stdio.h>
+#include <ctype.h>
+
+using namespace std;
+
+//prototype
+void garis(string);
+int pencarian(char*, char);
+void nama(string);
+
+int main(){
+
+	//mengatur warna font dan background pada console
+	system("mode con cols=82 lines=30");
+
+	//mengatur ukuran console
+	system("color 70");
+
+	//variabel
+	char ulang;
+	char kalimat[50];
+	char huruf;
+	string b,c;
+
+	do{
+
+		nama(c);
+
+		garis(c);
+		cout<<"                   PROGRAM MENCARI JUMLAH SUATU KARAKTER"<<endl;
+		cout<<"             	                 PADA KALIMAT"<<endl;
+		garis(b);
+		pencarian(kalimat,huruf);
+		garis(b);
+
+		cout<<"\n Anda ingin mengulang? (y/n) ";
+		cin>>ulang;
+		system("cls");
+	}while(ulang == 'y' or ulang == 'Y');
+	return 0;
+}
+
+//fungsi membuat garis batas
+void garis(string a){
+	cout<<"----------------------------------------------------------------------------------"<<endl;
+}
+
+//fungsi untuk menginput kalimat dan huruf, serta mencari jumlah karakter pada kalimat
+int pencarian(char kalimat[50],char karakter){
+
+	//variabel
+	int jumlah = 0, tbh;
+	string c;
+
+	cout<<" Masukkan kalimat                 : ";
+	gets(kalimat);
+
+	//perintah mengubah kalimat menjadi lowercase
+	strlwr(kalimat);
+
+	cout<<" Masukkan huruf yang ingin dicari : ",cin>>karakter;
+
+	//perintah mengubah karakter menjadi lowercase
+	karakter = tolower(karakter);
+
+	garis(c);
+
+	//perulangan untuk mencari jumlah suatu karakter pada kalimat
+	for(int i = 0; i < strlen(kalimat); i++){
+		if(karakter == kalimat[i]){
+			jumlah++;
+			tbh = 1;
+		}
+	}
+
+	//mengubah karakter menjadi kapital
+	karakter = toupper(karakter);
+
+	//kondisi apabila karakter terdapat pada kalimat atau tidak
+	if(tbh != 0)
+		cout<<"\n Jumlah huruf "<<karakter<<" sebanyak          : "<<jumlah<<" buah"<<endl;
+	else
+		cout<<"\n Huruf "<<karakter<<" tidak terdapat dalam kalimat yang diinput";
+
+	return jumlah;
+}
+
+//fungsi untuk identitas
+void nama(string abc){
+	cout<<" NAMA  : Dani Aji Syahputra"<<endl;
+	cout<<" NIM   : 22051214015"<<endl;//membersihkan inputan
+	cout<<" KELAS : Sistem Informasi 2022 A \n"<<endl;
+}

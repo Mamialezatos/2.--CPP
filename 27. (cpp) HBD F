@@ -1,0 +1,51 @@
+#include<iostream>
+#include <bits/stdc++.h>
+#include<windows.h>
+#include<conio.h>
+#include<dos.h>
+using namespace std;
+	
+int main(){
+	string nama, bday;
+	int F = 1;
+    char h = '\3', j;
+	
+	cout<<"Masukkan Nama Yang Berulang Tahun : "; cin>>nama; cin.ignore(numeric_limits<streamsize>::max(), '\n');
+	cout<<endl;
+	
+	cout<<"Masukkan Tanggal dan Bulan : "; cin>>bday;
+	cout<<endl;
+
+do {
+	cout<<F<<" HAPPY BIRTHDAY SENPAIII "<<endl;
+	F++;
+}while(F<=21);
+
+
+
+
+	cout<<endl<<endl<<endl<<"\t\t\tfrom : \t Ikko Awinata" <<endl<<"\t\t\t To  : \t Mas Fahmi <3"<<endl<<"\t\t";
+	Sleep(1000);
+	for (int i = 0; i < 40 ; i++){
+		cout<< "_";
+	}
+	cout << endl << endl << "\t\t\t\t  * * * * * " <<endl;
+	cout << "\t\t\t\t  | | | | | "<< endl;
+	cout << "\t\t\t\t__|_|_|_|_|__";
+	cout << endl << "\t\t\t       |" << h << "\t    " << h << "|";
+	cout << endl << "\t\t\t     __|"<<"  "<< " 09 April "<<" "<<"|__";
+   	cout << endl << "\t\t\t    | " << h << "     " <<  h <<  "    " << h << "    " << h << " | ";
+    cout << endl << "\t\t\t  __|" << h << "      HAPPY      "     << h <<"|__";
+    cout << endl << "\t\t\t |" <<h<<"        BIRTHDAY       " << h <<"|";
+    cout << endl << "\t\t\t |" <<h<<"   F A H M I K U N <3  " << h <<"|";
+    cout << endl << "\t\t\t |" <<h<<"       K E - 2 1       " << h <<"|";
+    cout << endl << "\t\t\t |=========================|";
+    cout << endl << "\t\t\t |_________________________|";
+    cout << endl << endl << endl ;
+    cout << endl << " Created By Ikkoc_awinata "<<endl;
+
+
+
+}
+
+	

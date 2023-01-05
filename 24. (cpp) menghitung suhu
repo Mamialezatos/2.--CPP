@@ -1,0 +1,40 @@
+//Nama		: Ikko Cahya Awinata
+//Kelas		: TI A 2022
+//NIM		: 22051204038
+//MATKUL	: Pemograman Dasar
+
+//-----Menghitung Konversi Suhu Derajat Celsius (C)-----
+
+#include<iostream>
+using namespace std;
+
+ int main () {
+ 	float C,F,Nama;
+ 	
+ 	cout<<"Programmer by"<<endl;
+ 	cout<<"Nama 	= Ikko Cahya Awinata"<<endl;
+ 	cout<<"Kelas 	= TI A 2022"<<endl;
+ 	cout<<"NIM	= 22051204038"<<endl;
+ 	cout<<"Matkul	= Pemograman Dasar"<<endl;
+ 	cout<<"======================================"<<endl;
+ 	
+ 	
+ 	//value C
+ 	cout<<"Masukkan Nilai Suhu Derajat Celcius="<<endl;
+ 	cin>>C;
+ 	
+ 	//Proses Penghitungan
+ 	F= C*1.8 + 32;
+ 	
+	//pemanis 
+	cout<<"F=C x 1.8+32"<<endl;
+	cout<<"F="<<C<<"x"<<1.8<<"+"<<32<<endl;
+	cout<<"F="<<F<<endl;
+	
+ 	//penampilan hasil
+ 	cout<<"Hasil Konversi Suhu adalah="<<endl;
+ 	cout<<F<<"fahrenheit"<<endl;
+ }
+  
+ 
+ 

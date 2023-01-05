@@ -1,0 +1,38 @@
+//Nama	= Ikko Cahya Awinata
+//Kelas	= TI A 2022
+//NIM	= 22051204038
+//Matkul	= Pemdas (Tugas Pert-5 program cari Bil. terkecil-terbesar)
+
+#include<iostream>
+using namespace std;
+	
+
+	int main(){
+	cout<<"Nama	= Ikko cahya Awinata"<<endl;
+	cout<<"Kelas 	= TI A 2022"<<endl;
+	cout<<"NIM	= 22051204038"<<endl;
+	cout<<"========Mencari Bilangan Terkecil dan terbesar========"<<endl;
+		int a,b,terkecil, terbesar;
+		
+	//value
+	cout<<"Masukkan bilangan 1 :"<<endl;
+	cin>>a;
+	
+	cout<<"Masukkan bilangan 2 :"<<endl;
+	cin>>b;
+	
+	if(a<b)
+	cout<<"Nilai terkecilnya adalah :"<<a<<", Nilai terbesarnya adalah :" <<b<<endl;
+	
+	else if(a>b)
+	cout<<"Nilai terkecilnya adalah :"<<b<< ", Nilai terbesarnya adalah :" <<a<<endl;
+	
+	else if(a=b)
+	cout<<"nilainya adalah sama" <<endl;
+	
+	
+	
+	cout<<"======================================"<<endl;
+	cout<<"Sekian dari program saya, Terima Kasih"<<endl;
+	
+	}

@@ -1,0 +1,37 @@
+//Nama		= Ikko Cahya Awinata
+//Kelas		= TI A 2022
+//NIM		= 22051204038
+//Matkul	= Pemdas (Latihan Membagi Bil.Integer dan Memberi pesan)
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	cout<<"Nama	= Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas	= TI A 2022"<<endl;
+	cout<<"NIM	= 22051204038"<<endl;
+	cout<<"========Menghitung Pembagian Bil. Integer========"<<endl;
+	
+	
+	float a,b,hasil, pilih;
+	string lanjut;
+	
+	//value
+	cout<<"Masukkan bilangan yang akan dibagi:"<<endl;
+	cin>>a;
+	cout<<"Masukkan bilangan pembagi :"<<endl;
+	cin>>b;
+	if (b==0)
+	cout<<"tidak dapat dibagi dengan angka nol"<<endl;
+	
+	hasil=a/b;
+	cout<<"Hasil dari pembagian adalah ="<<hasil<<endl;
+	
+	cout<<"lanjut <y/n:"<<endl;
+	
+
+	cout<<"sekian dari program saya terima kasih"<<endl;
+}
+	
+	
+

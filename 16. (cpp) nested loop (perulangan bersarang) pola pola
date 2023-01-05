@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+ main(){
+ 	cout<<"Nama	: Ikko Cahya Awinata"<<endl;
+ 	cout<<"Kelas	: TI A 2022"<<endl;
+ 	cout<<"NIM	: 22051204038"<<endl;
+ 	cout<<"Matkul	: Pemdas (Pemdas Pert. 6-7 (TUGAS 2)"<<endl;
+ 	cout<<"BUATLAH PROGRAM PERULANGAN BERSARANG ATAU NESTED LOOP"<<endl;
+ 	
+ 	int n;
+ 	
+		cout<<"Masukkan Bilangan = ";
+		cin>>n;
+		
+		cout<<"Pola 1"<<endl;
+		
+		for (int i =1; i<= n; i++){
+			for(int j=n; j>=i; j--){
+				cout<<"*";
+			}
+			cout<<endl;
+		}
+		cout<<"Pola 2"<<endl;
+		
+		for( int i =1;  i<=n; i++){
+			for (int j=1; j<=i; j++){
+				cout<<"*";
+			}
+			cout<<endl;
+		}
+		cout<<"Sekian Program Dari Saya. Terima Kasih"<<endl;
+
+}

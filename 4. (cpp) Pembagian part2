@@ -1,0 +1,32 @@
+//Nama	= Ikko cahya Awinata
+//Kelas	= TI A 2022
+//NIM	= 22051204038
+//Matkul	= Pemdas (latihan 2 Program pembagian Bil.Integer)
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	
+	cout<<"Nama	= Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas	= TI A 2022"<<endl;
+	cout<<"NIM	=22051204038"<<endl;
+	cout<<"=========Pembagian Bilangan Integer dengan angka nol part2========"<<endl;
+	
+	//deklarasi
+	float a,b,hasil;
+	
+	
+	//value
+	cout<<"masukkan bilangan a ="<<endl;
+	cin>>a;
+	
+	cout<<"masukkan bilangan b ="<<endl;
+	cin>>b;
+	if (b==0)
+	cout<<"tidak dapat dibagi dengan bilangan nol"<<endl;
+	
+	hasil = a/b;
+	cout<<"hasil Pembagian dari "<<a<< "/"<<b<<" adalah "<<hasil<<endl;
+	cout<<"sekian dari saya, terima kasih"<<endl;
+}

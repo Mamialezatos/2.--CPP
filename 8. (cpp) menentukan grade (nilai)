@@ -1,0 +1,73 @@
+//Nama	=Ikko cahya Awinata
+//Kelas	= TI A 2022
+//NIM	= 22051204038
+//Matkul	= Pemdas (Pert-4 Program Menghitung Grade)
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	
+	cout<<"Nama	= Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas	= TI A 2022"<<endl;
+	cout<<"NIM	= 22051204038"<<endl;
+	cout<<"==========Menghitung Grade Mahasiswa=========="<<endl<<endl;
+	
+	float tugas, partisipasi, uts, uas, nilai_akhir;
+	char nilai_huruf;
+	
+	//proses//
+	cout<<"Masukkan Nilai Tugas : " ;
+	cin>>tugas;
+	
+	cout<<"Masukkan Nilai Partisipasi : ";
+	cin>>partisipasi;
+	
+	cout<<"Masukkan Nilai UTS : ";
+	cin>>uts;
+	
+	cout<<"Masukkan Nilai UAS : " ;
+	cin>>uas;
+	
+	//rumus//
+	nilai_akhir =(tugas*0.15) + (partisipasi*0.15) + (uts*0.30) + (uas*0.40);
+	
+	if(nilai_akhir>=90){
+		nilai_huruf='A';
+}
+		
+	else if(nilai_akhir>=80){
+		nilai_huruf='B';
+	}
+		
+	else if(nilai_akhir>=70){
+		nilai_huruf='C';
+	}
+		
+	else if(nilai_akhir>=60){
+		nilai_huruf='D';
+	}
+		
+	else{
+		nilai_huruf='E';
+		
+	
+	}
+	
+	//output//
+	cout<<"Nilai Akhir :"<<nilai_akhir<<endl<<endl;
+	cout<<"Nilai Huruf :"<<nilai_huruf<<endl<<endl;
+	
+	//pemanis
+	cout<<"Anda Memperoleh Predikat : "<<nilai_huruf<<endl<<endl;
+
+	cout<<"======================================"<<endl;
+	cout<<"Sekian Program dari saya, Terima Kasih"<<endl;
+	
+	
+	
+
+		
+
+	}
+		

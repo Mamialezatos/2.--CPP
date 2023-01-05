@@ -1,0 +1,54 @@
+//Nama	= Ikko cahya Awinata
+//Kelas	= TI A 2022
+//NIM	= 22051204038
+//Matkul	=Pemdas (latihan 2 Program mencari nilai terbesar dari 3 bilangan)
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	cout<<"Nama	= Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas	= TI A 2022"<<endl;
+	cout<<"NIM	= 22051204038"<<endl;
+	cout<<"========Mencari Nilai Terbesar Dari 3 Bilangan========"<<endl;
+
+	
+		float bil1, bil2, bil3, terbesar;
+		
+		cout<<"masukkan bilangan 1"<<endl;
+		cin>>bil1;
+		
+		cout<<"masukkan bilangan 2"<<endl;
+		cin>>bil2;
+		
+		cout<<"masukkan bilangan 3"<<endl;
+		cin>>bil3;
+		
+	{
+		if(bil1>bil2)
+		terbesar=bil1;
+		
+		else
+		terbesar = bil2;
+		
+		if(bil3>terbesar)
+		terbesar = bil3;
+		
+		cout<<endl;
+		cout<<"Nilai Terbesarnya adalah ="<<terbesar;cout<<endl;
+		
+		
+		cout<<"========================================"<<endl;
+		cout<<"---------------sekian dari program saya, terima kasih-------------"<<endl;
+		
+	}
+		
+	}
+	
+	
+
+	
+
+	
+	

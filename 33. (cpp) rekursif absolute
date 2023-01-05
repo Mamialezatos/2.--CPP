@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int absolute (int);// prototipe fungsi
+
+int main(){ 
+    int num, answer;     
+    cout << "Enter an integer (0 to stop): "; 
+    cin >> num;
+	  while (num!=0){         
+        answer = absolute(num); 
+        cout << "the absolute value of " << num;
+        cout << " is: " << answer << endl;
+        cin >> num;    }
+} 
+
+int absolute(int x){ 
+    if (x >= 0)	return x; 
+    else 		return -x; } 

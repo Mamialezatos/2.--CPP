@@ -1,0 +1,31 @@
+//	Nama  	: Ikko Cahya Awinata
+//	Kelas 	: TI A 2022
+//	Matkul	: Pemograman Dasar
+//	NIM		: 22051204038
+		
+#include <iostream>
+using namespace std;
+
+int main(){
+	float HB, HJ, PU;
+	
+	//value HB
+	cout<<"Masukkan Harga Beli Barang="<<endl; 
+	cin>>HB;
+	
+	//cara perhitungannya pendapatan untung (PU)
+	PU = HB * 30/100;
+	cout<<"harga beli = "<<HB<< " x "<< 0.30<< " = "<<PU<<endl;
+	cout<<"nilai dari hasil pendapatan untung="<<PU<<endl;
+	
+	//cara perhitungannya harga jual (HJ)
+	HJ = PU + HB;
+	cout<<"Nilai hasil jual dari penjumlahan PU+HB="<<HJ<<endl;
+	
+	//penampilan hasil harga jual adalah
+	cout<<"Nilai Harga Jual Barang adalah="<<endl;
+	cout<<HJ<<"Rp"<<endl;
+}
+	
+	
+	

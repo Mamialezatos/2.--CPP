@@ -1,0 +1,64 @@
+//Nama		: Ikko Cahya Awinata
+//Kelas		: TI A 2022
+//NIM		: 22051204038
+//Matkul	: Pemdas (Program Menampilkan Kata)
+#include<iostream>
+using namespace std;
+
+int main(){
+	cout<<"Nama		: Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas	: TI A 2022"<<endl;
+	cout<<"NIM		: 22051204038"<<endl;
+	cout<<"Matkul	: Pemdas (program Menampilkan Kata"<<endl;
+	cout<<"==========================================="<<endl;
+	cout<<"=============Selamat Datang================"<<endl;
+	
+	int angka;
+	
+	cout<<"Masukkan angka : ";
+	cin>>angka;
+	
+	switch(angka){
+		case 0:
+			cout<<"nol";
+			break;
+		case 1:
+			cout<<"satu";
+			break;
+		case 2:
+			cout<<"dua";
+			break;
+		case 3:
+			cout<<"tiga";
+			break;
+		case 4:
+			cout<<"empat";
+			break;
+		case 5:
+			cout<<"lima";
+			break;
+		case 6:
+			cout<<"enam";
+			break;
+		case 7:
+			cout<<"tujuh";
+			break;
+		case 8:
+			cout<<"delapan";
+			break;
+		case 9:
+			cout<<"sembilan";
+			break;
+		case 10:
+			cout<<"sepuluh";
+			break;
+		default:
+			cout<<"masukkan tidak ditemukan";
+			
+		cout<<"========================================"<<endl;
+		cout<<"Sekian, program dari saya, terima kasih."<<endl;
+	
+		
+			
+	}
+}

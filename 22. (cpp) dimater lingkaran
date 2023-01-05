@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	const float phi =3.14;
+	float K, d;
+	
+	//value d
+	cout<<"masukkan diameter lingkaran =";
+	cin>>d;
+	
+	//proses perhitungan keliling lingkaran
+	K = phi * d;
+	
+	//pemanis
+	cout<<"diketahui lingkaran = "<<endl;
+	cout<<"phi	 ="<<phi<<endl;
+	cout<<"d	 ="<<d<<endl;
+	cout<<"======================="<<endl;
+	
+	
+	//penampilan hasil
+	cout<<"Keliling lingkaran dengan diameter "<<d<<"cm"<<" adalah";
+	cout<<K<<"cm2"<<endl;
+} 

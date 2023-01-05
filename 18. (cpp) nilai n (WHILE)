@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+	int main(){
+		cout<<"Nama	: Ikko Cahya Awinata"<<endl;
+		cout<<"Kelas	: TI A 2022"<<endl;
+		cout<<"NIM	: 22051204038"<<endl;
+		cout<<"Matkul	: Pemdas (LAT.1 Nilai N While)"<<endl;
+		cout<<"======================================="<<endl;
+		
+		
+		
+		int i , j = 2, hasil;
+		cout<<"Masukkan Nilai angka (i)"<<endl;
+		cin>>i;
+		
+		cout<<"Masukkan nilai pangkat (j)"<<endl;
+		cin>>j;
+		
+		hasil =pow(i,j);
+		cout<<"Hasil Dari " << " angka " << i << " pangkat " << j << " adalah " << hasil<< endl;
+	
+		while(i<10){
+			cout<< hasil <<endl;
+			
+		}
+}
+		
+		
+	

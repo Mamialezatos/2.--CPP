@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+	main(){
+		
+		cout<<"Nama	: Ikko Cahya Awinata"<<endl;
+		cout<<"Kelas	: TI A 2022"<<endl;
+		cout<<"NIM	: 22051204038"<<endl;
+		cout<<"Matkul	: Pemdas Pert.6-7 (PROGRAM WHILE DAN DO WHILE)"<<endl;
+		cout<<"=============================================="<<endl;
+		cout<<"PERULANGAN DO WHILE"<<endl;
+		
+		//value
+		int a = 1;
+		 do{
+		 cout<<a<<". HALO "<<endl;
+		 a++;
+	}
+	while(a<=5);
+	
+	cout<<"Sekian Program Dari Saya. Terima Kasih"<<endl;
+	}

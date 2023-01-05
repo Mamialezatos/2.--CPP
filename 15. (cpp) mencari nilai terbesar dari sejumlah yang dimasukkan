@@ -1,0 +1,48 @@
+// Nama	: Ikko Cahya Awinata
+// Kelas	: TI A 2022
+// NIM	: 22051204038
+//Matkul	: Pemdas (Pertemuan 6-7)
+
+#include <iostream>
+using namespace std;
+ 
+main (){
+	cout<<"Nama	: Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas	: TI A 2022"<<endl;
+	cout<<"NIM	: TI A 2022"<<endl;
+	cout<<"Matkul	:Pemdas (Tugas Pert 6-7"<<endl;
+	cout<<"BUAT PROGRAM UNTUK MENCARI NILAI TERBESAR DARI SEJUMLAH BILANGAN YANG DIMASUKKAN"<<endl;
+	
+	int bil1,bil2,bil3;
+	float bil_terbesar, lanjut;
+	
+	cout<<"Masukkan Bilangan 1"<<endl; cin>>bil1;
+	cout<<"Masukkan Bilangan 2"<<endl; cin>>bil2;
+	cout<<"Masukkan Bilangan 3"<<endl; cin>>bil3;
+	
+	if(bil1>bil2){
+		bil_terbesar=bil1;
+	}
+	else
+	bil_terbesar=bil2;
+	
+	if(bil3>bil2)
+	bil_terbesar=bil3;
+	
+	cout<<"Bilangan Terbesarnya Adalah = "<<bil_terbesar<<endl;
+	
+	cout<<"Lanjut y/n?"<<endl;
+	cin>>lanjut;
+	
+	if (bil_terbesar<lanjut)
+	cout<<"program selesai"<<endl;
+	
+	
+	
+	
+	cout<<"Sekian Program Saya. Terima Kasih"<<endl;
+	cout<<"Date Production 08/10/2022"<<endl;
+
+	
+	
+}

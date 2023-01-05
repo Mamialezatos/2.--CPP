@@ -1,0 +1,127 @@
+#include <iostream>
+#include <bits/stdc++.h>
+#include <string.h>
+using namespace std;
+
+int number=0;
+
+int tunj_kel(int n){
+    if(n<=0){
+        return n;
+    }else{
+        return n*50000;
+    }
+}
+
+int tidak_hadir(int m){
+    if(m<=0){
+        return m;
+    }else{
+        return m*90000;
+    }
+}
+
+int banyak_kywn(int a, int gaji[], string nama[]){
+    if(a==0){
+        return a;
+    }else{
+        cout<<number+1<<". karyawan dengan nama '"<<nama[number]<<"' mendapatkan gaji sebesar = "<<gaji[number]<<endl;
+        number++;
+        return banyak_kywn(a-1, gaji, nama);
+    }
+}
+
+void sambutan(void){
+    cout<<"SELAMAT DATANG DI PT.SINAR SURYA "<<endl;
+    cout<<"masukkan jumlah karyawan                  : ";
+}
+
+int main(int argc, char const *argv[])
+{
+    int pas, jumlah, anak, thadir, gaji_pokok, gtidak_h, gol, lembur, upah_lembur;
+    char j;
+    
+    sambutan();
+    cin>>jumlah;
+
+    int gaji[jumlah];
+    string nama[jumlah];
+
+    for(int i=0; i<jumlah; i++){
+        cout<<"masukkan nama karyawan                    : ";
+        
+        cin>>nama[i];
+        
+        //istringstream iss(temp);
+        
+        do{
+            cout<<"masukkan golongan dari karyawan [1/2/3/4] : ";
+            cin>>gol;
+
+            
+            switch(gol){
+                case 1:
+                gaji_pokok=90000*30;
+                break;
+
+                case 2:
+                gaji_pokok=136000*30;
+                break;
+
+                case 3:
+                gaji_pokok=181000*30;
+                break;
+
+                case 4:
+                gaji_pokok=250000*30;
+                break;
+
+                default:
+                system("cls||clear");
+                cout<<"mohon pilih sesuai dengan yang tersedia "<<endl;
+            }
+        }while(gol>4);
+
+        do{
+            cout<<"apakah sudah berkeluarga [Y/N]            : ";
+            cin>>j;
+
+            switch(j)
+            {
+                case 'y':
+                case 'Y':
+                pas=100000;
+                cout<<"jumlah anak                               : ";
+                cin>>anak;
+                pas+=tunj_kel(anak);
+                break;
+
+                case 'n':
+                case 'N':
+                pas=0;
+                break;
+
+                default:
+                system("cls||clear");
+                cout<<"mohon pilih sesuai dengan pilihan       "<<endl;
+                break;
+            }
+        } while (j!='n'&&j!='N' && j!='y'&&j!='Y');
+        
+        
+
+        cout<<"jumlah ketidak hadiran                    : ";
+        cin>>thadir;
+        gtidak_h=tidak_hadir(thadir);
+
+        cout<<"masukkan jumlah jam lembur                : ";
+        cin>>lembur;
+        cout<<endl;
+        upah_lembur=lembur*10000;
+
+        gaji[i]=((gaji_pokok)-gtidak_h)+pas+upah_lembur;
+    }
+    
+    banyak_kywn(jumlah,gaji,nama);
+    return 0;
+}

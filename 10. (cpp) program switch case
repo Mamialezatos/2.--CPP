@@ -1,0 +1,71 @@
+//	Nama	= Ikko Cahya Awinata
+//	Kelas	= TI A 2022
+//	NIM		= 22051204038
+//	Matkul	= Pemdas (Tugas pert-5 Program Switch Case)
+
+#include<iostream>
+using namespace std;
+
+	int main(){
+		cout<<"Nama	= Ikko Cahya Awinata"<<endl;
+		cout<<"Kelas	= TI A 2022"<<endl;
+		cout<<"NIM	= 22051204038"<<endl;
+		cout<<"=========================="<<endl;
+		
+		const float phi = 3.14;
+		int r, sisi, tinggi, pil;
+		float volume, luas;
+		string volume_kubus;
+		string luas_lingkaran;
+		string luas_silinder;
+		string other;
+		
+		cout<<"Pilih Salah Satu"<<endl;
+		cout<<"1. Volume Kubus"<<endl;
+		cout<<"2. Luas Lingkaran"<<endl;
+		cout<<"3. Luas Silinder"<<endl;
+		cout<<"4. Jangan Dipilih"<<endl;
+		
+		cout<<"Masukkan Pilihan Anda"<<endl;
+		cin>>pil;
+		
+		switch (pil){
+			case 1:
+				cout<<"Anda Memilih Menghitung Volume Kubus"<<endl;
+				cout<<"Masukkan Sisi Kubus"<<endl;
+				cin>>sisi;
+				cout<<sisi<<"x"<<sisi<<"x"<<sisi<<endl;
+				volume = sisi*sisi*sisi;
+				cout<<"Volume Kubus Adalah : "<<volume<<endl;
+				break;
+				
+			case 2:
+				cout<<"Anda Memilih Menghitung Luas Lingkaran"<<endl;
+				cout<<"Masukkan jari - jari Lingkaran"<<endl;
+				cin>>r;
+				luas = phi*r*r;
+				cout<<phi<<"x"<<r<<"x"<<r<<endl;
+				cout<<"Hasil Luas Lingkaran Adalah : " <<luas<<endl;
+				break;
+				
+			case 3:
+				cout<<"Anda Memilih Menghitung Volume Silinder"<<endl;
+				cout<<"Masukkan Jari-Jari Silinder"<<endl;
+				cin>>r;
+				cout<<"Masukkan Tinggi Silinder"<<endl;
+				cin>>tinggi;
+				cout<<phi<<"x"<<r<<"x"<<r<<"x"<<tinggi<<endl;
+				volume = phi*r*r*tinggi;
+				cout<<"Hasil Volume Silinder : "<<volume<<endl;
+				break;
+				
+			default :
+				cout<<"Pilihan Anda Salah.Dibilangin Jangan dipilih. Memilih Seseorang Yang Tepat Itu Sangat Susah"<<endl;
+				cout<<"Coba Anda pilih Saya Pasti Suka kok"<<endl;
+				cout<<"Follow Instagram @ikkoc_awinata"<<endl;
+				break;
+		}
+		cout<<"======================================"<<endl;
+		cout<<"Sekian Program Dari saya, Terima Kasih"<<endl;
+		cout<<"Follow @ikkoc_awinata"<<endl;
+	}

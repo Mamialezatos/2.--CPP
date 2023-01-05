@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+double total_second(int, double ,double );
+int main(){
+	cout << total_second(1,1.5, 2) << endl;
+	return 0;
+}
+
+double total_second( int hour, double minutes, double second){
+
+	return hour*3600 + minutes * 60 + second;
+}

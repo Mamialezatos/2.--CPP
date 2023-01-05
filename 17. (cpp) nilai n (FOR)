@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+	main(){
+		cout<<"Nama	: Ikko Cahy Awinata"<<endl;
+		cout<<"Kelas	: TI A 2022"<<endl;
+		cout<<"NIM	: 22051204038"<<endl;
+		cout<<"Matkul	: Pemdas (LAT 1. NILAI N FOR)"<<endl;
+		cout<<"======================================"<<endl;
+		
+		int i, j, hasil;
+		
+		
+			for(i=1; i<=10; ++i){
+			cout<<"masukkan nilai awal"<<endl;
+			cin>>i;
+				
+			cout<<"masukkan nilai pangkat"<<endl;
+			cin>>j;
+			
+	
+			hasil = pow(i,j);
+			cout<< " hasil dari angka " << i << " pangkat " << j << " adalah : " << hasil << endl;
+			
+		}
+		cout<<"sekian dari Program Saya. Terima Kasih"<<endl;
+		cout<<"Created By Ikko Cahya Awinata"<<endl;
+		cout<<"NOTE : KETIKA NILAI AWAL (i<=10) , MAKA KONDISI FOR TERPENUHI"<<endl;
+		
+		
+	}

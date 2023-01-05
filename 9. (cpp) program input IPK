@@ -1,0 +1,48 @@
+//Nama		= Ikko Cahya Awinata
+//Kelas		= TI A 2022
+//NIM		= 22051204038
+//Matkul	= Pemdas (Program Tugas Pert-5 Menentukan IPK)
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	cout<<"Nama	= Ikko Cahya Awinata"<<endl;
+	cout<<"Kelas	= TI A 2022"<<endl;
+	cout<<"NIM	= 22051204038"<<endl;
+	cout<<"==========Menentukan IPK=========="<<endl;
+	float IPK;
+	char keterangan_lulus;
+	
+	cout<<"Masukkan IPK"<<endl;
+	cin>>IPK;
+	
+	if(IPK>=4.00){
+		keterangan_lulus = 'Sempurna';
+		cout<<"SEMPURNA"<<endl;	
+		cout<<"SELAMAT ANDA LULUS DENGAN PREDIKAT CUMLAUDE"<<endl;
+	}
+	
+	else if (IPK>=3.49){
+		keterangan_lulus = 'Sangat Baik';
+	cout<<"SANGAT BAIK"<<endl;
+}
+
+	else if(IPK>=2.99){
+		keterangan_lulus = 'Baik';
+		cout<<"BAIK"<<endl;
+	}
+	
+	else if(IPK>=1.99){
+		keterangan_lulus = 'Mengulang';
+		cout<<"MENGULANG"<<endl;
+	}
+	
+	else if(IPK>=0.99){
+		keterangan_lulus = 'Tidak Lulus';
+		cout<<"TIDAK LULUS"<<endl;
+	}
+	cout<<"================================="<<endl;
+	cout<<"Sekian Program Dari Saya, Terima Kasih"<<endl;
+	cout<<"follow @ikkoc_awinata"<<endl;
+	}

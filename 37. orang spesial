@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+	cout<<"creator from Ikko cahya awinata"<<endl;
+    string a,b, jwb;
+    
+    cout<<"masukkan dua nama orang yang menurutmu spesial"<<endl;
+    cout<<"=============================================="<<endl;
+    
+    cout<<"masukkan nama orang pertama : ";
+    cin>>a;
+    
+    cout<<"masukkan nama orang kedua : ";
+    cin>>b;
+    
+    cout<<"menurutmu siapa yang lebih spesial dari dua nama orang diatas?";
+    cin>>jwb;
+    
+if(jwb==a){
+cout<<"anda benar sekali!"<<endl;
+}   
+else if (a<b){
+cout<<"anda salah! orang yang spesial itu adalah : " << a << endl;
+}
+    cout<<"program selesai"<<endl;
+}

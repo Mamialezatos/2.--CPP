@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+float r; float t;
+void luas()
+{ 
+float l=(2*(3.14*(r*r))+(3.14*(r+r)*t));
+cout<<" Nilai Luas Tabung : "<<l<<endl;
+} 
+void selimut()
+{ 
+float s=(3.14*(r+r)*t);
+cout<<" Nilai Selimut Tabung : "<<s<<endl;
+} 
+void volume()
+{ 
+float v=3.14*(r*r)*t;
+cout<<" Nilai Volume Tabung : "<<v<<endl;
+} 
+void garis()
+{ 
+for(int i=0; i<79; i++){
+ cout<<"-";
+ } 
+cout<<endl;
+} 
+
+void nama()
+{ 
+cout<<" NAMA  : IKKO CAHYA AWINATA"<<endl;
+cout<<" NIM   : 22051204038"<<endl;
+cout<<" PRODI : S1 TEKNIK INFORMATIKA A 2022"<<endl;
+} 
+int main()
+{ 
+nama();
+garis();
+cout<<"\t\t\t\t PROGRAM TABUNG"<<endl;
+garis();
+cout<<" Masukkan nilai jari-jari tabung : ";
+cin>>r;
+cout<<" Masukkan nilai tinggi tabung : ";
+cin>>t;
+cout<<endl;
+garis();
+luas();
+selimut();
+volume();
+garis();
+} 

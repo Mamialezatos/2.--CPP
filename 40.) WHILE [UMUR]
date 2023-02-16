@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int umur;
+
+    cout << "Umur Anda Berapa ? " << endl;
+    cin >>  umur;
+
+    while ((umur < 5) || (umur >= 100)){
+        cout << " Saya tidak yakin umur anda " << umur << "tahun";
+        cout << endl;
+        cout << "silahkan diulangi....\n\n";
+
+        cout << "Umur anda berapa ? " << endl;
+        cin >> umur;
+    }
+    cout <<endl;
+    if ((umur > 12 ) && (umur < 19)){
+        cout << " wahh anda baru beranjak remaja" <<endl;
+        cout << " gunakan waktu sebaik-baiknya yak " << endl;
+    }
+    if ((umur >= 19) && (umur <= 100)){
+        cout << " Anda sudah beranjak tua " <<endl;
+        cout << " jadilah sesorang yang dewasa " <<endl;
+    }
+}

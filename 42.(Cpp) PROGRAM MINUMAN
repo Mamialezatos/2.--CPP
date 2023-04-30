@@ -1,0 +1,192 @@
+#include<iostream>
+#include<string.h>
+#include <math.h>
+#include <conio.h>
+#include <limits>
+using namespace std;
+
+//tabel
+void Tabel(){
+    cout << "====================================================" << endl;
+    cout << " No. |\t    DAFTAR MINUMAN \t|  \t HARGA \t    |" << endl;
+    cout << "====================================================" << endl;
+    cout << " 1.  | Jus Jeruk                | Rp.         20.000|" << endl;
+    cout << " 2.  | Kopi Janji Jiwa          | Rp.         18.000|" << endl;
+    cout << " 3.  | Mixue Lemon Tea          | Rp.         16.000|" << endl;
+    cout << " 4.  | Es Campur Doger          | Rp.         15.000|" << endl;
+    cout << " 5.  | Milk Shake               | Rp.         13.500|" << endl;
+    cout << " 6.  | Lemon Tea                | Rp.         10.000|" << endl;
+    cout << " 7.  | Capuccino Expresso       | Rp.         10.000|" << endl;
+    cout << " 8.  | Ice Tea                  | Rp.          6.000|" << endl;
+    cout << " 9.  | Air Mineral Unesa        | Rp.          3.500|" << endl;
+    cout << "======================================================" << endl;
+    //cout << " 0.  | Tidak Jadi Memesan       |                   |" << endl;
+};
+
+
+
+
+int main(){
+    int n,o,p,total, number; // Jumlah pesanan
+    char j;
+    float hasil1, hasil2, hasil3, hasil4, hasil5, hasil6, hasil7, hasil8, hasil9;
+    string nama, d, satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan;
+    Tabel();
+
+
+     
+      cout << " SELAMAT DATANG DI RESTAURANT MINUMAN YUNIK  " << endl;
+      cout << " Tanggal pesanan  [dd/mm/yyyy]: " ;
+      cin >> d;
+      cout << " silahkan ketik nomor antrian [1-3 digit] : ";
+      cin >> number;
+      cout << " Untuk nama pesanan atas nama siapa ? ";
+      cin >> nama;
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+      
+    do{
+    cout << " Silahkan kakak mau pesan apa [1/2/3/4/5/6/7/8/9] ? : " ; cin >> p;
+    switch (p){
+    case 1:
+    	cout << endl;
+        cout << "------ Jus Jeruk ------   " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Jus_Jeruk] : "; cin >> satu;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil1 = n*20000;
+        cout << " Total harganya untuk pesanan Jus Jeruk " << hasil1 << " ribu "<< endl;
+        break;
+
+    case 2:
+    	cout << endl;
+        cout << "------ Kopi Janji Jiwa ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Kopi_Janji_Jiwa] : "; cin >> dua;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil2 = n*18000;
+        cout << " Total harganya untuk pesanan Kopi Janji Jiwa " << hasil2 << " ribu " << endl;
+        break;
+
+    case 3:
+    	cout << endl;
+        cout << " ------ Mixue Lemon Tea ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Mixue_Leon_Tea] : "; cin >> tiga;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil3 = n*16000;
+        cout << " Total harganya untuk pesanan Mixue Lemon Tea " << hasil3 << " ribu " << endl;
+        break;
+
+    case 4:
+    	cout << endl;
+        cout << " ------ Es Campur Doger ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Es_Campur_Doger] : "; cin >> empat;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil4 = n*15000;
+        cout << " Total harganya untuk pesanan Es Campur Doger " << hasil4 << " ribu " << endl;
+        break;
+
+    case 5:
+    	cout << endl;
+        cout << " ------ Milk Shake ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Milk_Shake] : "; cin >> lima;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil5 =  n*13500;
+        cout << " Total harganya untuk pesanan Milk Shake " << hasil5 << " ribu " << endl;
+        break;
+
+    case 6:
+    	cout << endl;
+        cout << " ------ Lemon Tea ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Lemon_Tea] : "; cin >> enam;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil6 = n*10000;
+        cout << " Total harganya untuk pesanan Lemon Tea " << hasil6 << " ribu "<< endl;
+        break;
+
+    case 7:
+    	cout << endl;
+        cout << " ------ Cappucino Expresso ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Cappucino Expresso] : "; cin >> tujuh;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil7 = n*10000;
+        cout << " Total harganya untuk pesanan Cappucino Expresso " << hasil7  << " ribu "<< endl;
+        break;
+
+    case 8:
+    	cout << endl;
+        cout << " ------ Ice Tea ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Ice_Tea] : "; cin >> delapan;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil8 = n*6000;
+        cout << " Total harganya untuk pesanan Ice Tea " << hasil8  << " ribu "<< endl;
+        break;
+
+    case 9:
+    	cout << endl;
+        cout << " ------ Air Mineral Unesa ------ " << endl;
+        cout << " Ketik ulang nama minuman yang dipilih [Mixue_Leon_Tea] : "; cin >> sembilan;
+        cout << " Mau Pesan Berapa ? ";
+        cin >> n;
+        hasil9 = n*3500;
+        cout << " Total harganya untuk pesanan Air Mineral Unesa " << hasil9  << " ribu "<< endl;
+        break;
+
+    default:
+        cout << " Pilihan tidak sesuai. silahkan pilih sesuai tabel " << endl;
+        break;
+     }
+     
+     
+     // total keseluruhan
+     total = hasil1 + hasil2 + hasil3 + hasil4 + hasil5 + hasil7 + hasil8 + hasil9;
+
+     // tawaran lagi untuk customer
+     cout << endl;
+     cout << " Ada pesanan lain [Y/N] ? "; cin >> j;
+    } while(j == 'Y' || j == 'y');
+    cout << " Total Keseluruhan pesanannya " << total << " ribu " << endl;
+    cout << endl;
+    cout << endl;
+    cout << "=================================================================================================\t" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                       R E S T A U R A N T   M I N U M A N   Y U N I K                      \t|" << endl;
+    cout << "|                                   Jalan Sampoerna No. 12 B                                 \t|" << endl;
+    cout << "|                                  Kecamatan Pabean Cantikan                                 \t|" << endl;
+    cout << "|                                      ' 081233075270 '                                      \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|================================================================================================\t" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                               \t     " << d << "                       \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|      Author   : 'IKKO AWINATA'                                                             \t|" << endl;
+    cout << "|      Customer : " << nama <<                 " \t\t\t\t\t\t\t\t |" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                          P  E  S  A  N  A  N      N  O  M  O  R                            \t|" << endl;
+    cout << "|                   ____________________________________________________                     \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                            " << number <<                          "       \t\t\t\t                |" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                 SILAHKAN DIAMBIL PESANANNYA SESUAI DENGAN NOMOR ANTRIAN                    \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "|                                                                                            \t|" << endl;
+    cout << "===============================================================================================\t" << endl;
+    cout << endl;
+    cout << " Pesanan atas nama " << "'" << nama << "'" << " silahkan diambil pesanannya " ;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}

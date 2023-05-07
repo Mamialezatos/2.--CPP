@@ -1,0 +1,80 @@
+#include<iostream>
+#include<math.h>
+#include<string>
+using namespace std;
+
+void author(){
+    cout << "thanks for using this program" << endl;
+    cout << " Made by Ikkoc_awinata " << endl;
+}
+
+void judul(){
+    cout <<"======================================" << endl;
+    cout << " \t KALKULATOR SEDERHANA \t " << endl;
+    cout << "=====================================" << endl;
+}
+
+int main(){
+    int a ,b, input, hasil;
+    char masukan;
+
+   //author();
+   judul();
+   cout << " PILIH OPERATOR ARITMATIKA " << endl;
+   cout << " 1. PENJUMLAHAN " << endl;
+   cout << " 2. PENGURANGAN " << endl;
+   cout << " 3. PERKALIAN " << endl;
+   cout << " 4. PEMBAGIAN " << endl;
+   cout << " 5. MODULUS " << endl;
+   cout << "========================================" << endl;
+   cout << endl;
+
+do{
+    cout << "======================================="<< endl;
+   cout << " Masukkan angka pertama : " ;
+   cin >> a;
+   cout << endl;
+
+   cout << " Masukkan angka kedua : ";
+   cin >> b;
+   cout << "========================================" << endl;
+
+    cout << " Masukkan pilihan anda :";
+    cin >>  input ;
+    if(input == 1){
+    hasil = a + b;
+    cout << " Hasil Penjumlahan " << a << " + " << b << " = " << hasil;
+   }
+
+   else if (input == 2){
+    hasil = a - b;
+    cout << " Hasil Pengurangan " << a << " - " << b << " = " << hasil;  
+   }
+
+   else if(input ==3){
+    hasil = a * b;
+    cout << " Hasil Perkalian " << a << " * " << b << " = " << hasil;
+   }
+
+   else if(input == 4){
+    hasil = a/b;
+    cout << " Hasil Pembagian " << a << " / " << b << " = " << hasil << endl;
+   }
+
+   else if (input == 5){
+    hasil = a % b;
+    cout << " Hasil Modul " << a << " % " << b << " = " << hasil << endl;
+    
+   }else
+	cout << " pilihan tidak sesuai " << endl;
+	cout << endl;
+
+cout << endl;
+cout << " mau coba lagi ? ";
+cin >> masukan;
+}
+while(masukan == 'Y' || masukan == 'y');
+
+author();
+}
+

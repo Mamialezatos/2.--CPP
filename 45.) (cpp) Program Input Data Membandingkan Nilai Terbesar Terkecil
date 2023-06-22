@@ -1,0 +1,40 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+void welcome(){
+    cout <<"==============================================================="<< endl;
+    cout << "       S E L A M A T  D A T A N G  D I  P R O G R A M " << endl;
+    cout << "INPUT DATA DAN MENENTUKAN NILAI DATA TERKECIL DAN TERBESAR" << endl;
+    cout <<"==============================================================="<< endl;
+}
+
+int main() {
+    welcome();
+	cout<<"PROGRAM C++ BILANGAN TERKECIL DAN TERBESAR"<<endl;
+	int i,n;
+	float terkecil,terbesar,bil;
+	cout << "\nMasukan Banyaknya data yang akan dimasukkan : ";
+	cin >> n;
+	cout<<endl;
+	for (i=1;i<=n;i++){
+	     cout << "Masukan Bilangan Ke-" << i << " : ";
+	     cin >> bil;
+	     
+	     if (i==1){
+	     	terkecil=bil;
+	     	terbesar=bil;
+		 }
+		 else if (bil < terkecil){
+		 	terkecil=bil;
+		 }else if (bil > terbesar){
+		 	terbesar=bil;
+		 }else {
+		 	
+		 }
+	}
+	cout << "\nNilai Terkecil adalah : "<<terkecil<<endl;
+	cout << "Nilai Terbesar adalah : " << terbesar <<endl;
+
+	return 0;	
+}

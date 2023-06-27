@@ -1,0 +1,163 @@
+#include<iostream>
+#include<string.h>
+#include<math.h>
+using namespace std;
+
+
+void welcome(){
+cout<<"=============================================================="<<endl;
+cout<<"         S E L A M A T  D A T A N G  D I  P R O G R A M " << endl;
+cout << "                        MENGHITUNG SUHU " << endl;
+cout << "=============================================================="<< endl;
+};
+
+void table(){
+ cout << "========================================" << endl;
+    cout <<"No.|             Nama Suhu              |" << endl;
+    cout <<"========================================"<< endl;
+    cout <<"1  .| Derajat Celcius    -> Fahrenheit  |"<< endl;
+    cout <<"2  .| Derajat Fahrenheit -> Celcius     |"<< endl;
+    cout <<"3  .| Derajat Reamur     -> Fahrenheit  |"<< endl;
+    cout <<"3  .| Derajat Reamur     -> Fahrenheit  |"<< endl;
+    cout <<"4  .| Derajat Fahrenheit -> Reamur      |"<< endl;
+    cout <<"5  .| Derajat Reamur     -> Celcius     |"<< endl;
+    cout <<"6  .| Derajat Celcius    -> Reamur      |"<< endl;
+    cout <<"7  .| Derajat Kelvin     -> Celcius     |"<< endl;
+    cout <<"8  .| Derajat Celcius    -> Kelvin      |"<< endl;
+    cout <<"9  .| Derajat Kelvin     -> Fahrenheit  |"<< endl;
+    cout <<"10 .| Derajat Fahrenheit -> Kelvin      |"<< endl;
+    cout <<"11 .| Derajat Kelvin     -> Reamur      |"<< endl;
+    cout <<"12 .| Derajat Reamur     -> Kelvin      |"<< endl;
+    cout <<"========================================" << endl;
+};
+
+int main(){ 
+    int pilihan;
+    char j;
+    float c,r,f,k;
+    welcome();
+    table();
+
+do{
+    cout << "Masukkan piliihan anda sesuai dengan yang dicari [1/2/3/4/5/6/7/8/9/1/0/11/12] :  "; cin >> pilihan;
+    switch (pilihan){
+    case 1:
+    cout << " ----- 1.) Anda memilih Celcius -> Fahrenheit -----"<< endl;
+    cout << "Masukkan suhu celcius yang diketahui : "; 
+    cin >> c;
+    f = (9.0/5.0 * c) + 32;
+    cout << "Rumusnya yaitu : 9/5 * °C + (32) = 9/5 * " << c << " + (32) = " << f << endl;
+    cout << "Hasilnya adalah : " << f << "derajat Fahrenheit" << endl;
+    break;
+
+    case 2:
+    cout << "-------- 2.) Anda memilih Fahrenheit  -> Celcius --------" << endl;
+    cout << "Masukkan suhu fahrenheit yang diketahui : "; 
+    cin >> f;
+    c = 5.0/9.0 * (f - 32);
+    cout << "Rumusnya yaitu : 5/9 * F - (32) = 5/9 * " << f << " - (32) = " << c << endl;
+    cout << "Hasilnya adalah : " << c << " derajat Kelvin" << endl;
+    break;
+    
+    case 3:
+    cout << "-------- 3.) Anda memilih Reamur  -> Fahrenheit --------" << endl;
+    cout << "Masukkan suhu reamur yang diketahui : "; 
+    cin >> r;
+    f = (9.0/4.0 * r) + 32;
+    cout << "Rumusnya yaitu : (9/4 * r )+ 32 =( 9/4 * " << r << ") + 32 = " << f << endl;
+    cout << "Hasilnya adalah : " << f << " derajat Fahrenheit" << endl; 
+    break;
+
+    case 4:
+    cout << "-------- 4.) Anda memilih Fahrenheit  -> Reamur --------" << endl;
+    cout << "Masukkan suhu fahrenheit yang diketahui : "; 
+    cin >> f;
+    r = 4.0/9.0 * (f - 32);
+    cout << "Rumusnya yai4tu : 4/9 * f - (32) = 4/9 * " << f << " - (32) = " << r << endl;
+    cout << "Hasilnya adalah : " << r << " derajat Reamur" << endl; 
+    break;
+
+    case 5:
+    cout << "-------- 5.) Anda memilih Reamur  -> Celcius --------" << endl;
+    cout << "Masukkan suhu Reamur yang diketahui : "; 
+    cin >> r;
+    c = 5.0/4.0 *r;
+    cout << "Rumusnya yai4tu : 5/4 * r = 5/4  * " << r << " = " << c << endl;
+    cout << "Hasilnya adalah : " << c << " derajat Celcius" << endl; 
+    break;
+
+    case 6:
+    cout << "-------- 6.) Anda memilih Celcius -> Reamur --------" << endl;
+    cout << "Masukkan suhu Celcius yang diketahui : "; 
+    cin >> c;
+    r = 4.0/5.0 *c;
+    cout << "Rumusnya yaitu : 4/5 * r = 4/5  * " << c << " = " << r << endl;
+    cout << "Hasilnya adalah : " << r << " derajat Reamur" << endl; 
+    break;
+
+    case 7:
+    cout << "-------- 7.) Anda memilih Kelvin -> Celcius --------" << endl;
+    cout << "Masukkan suhu Kelvin yang diketahui : "; 
+    cin >> k;
+    c = 273 - k;
+    cout << "Rumusnya yaitu : 273 - k = 273 - " << k << " = " << c << endl;
+    cout << "Hasilnya adalah : " << c << " derajat Celcius" << endl; 
+    break;
+
+    case 8:
+    cout << "-------- 8.) Anda memilih Celcius -> kelvin --------" << endl;
+    cout << "Masukkan suhu celcius yang diketahui : "; 
+    cin >> c;
+    k = 273 + c;
+    cout << "Rumusnya yaitu : 273 + c = 273 + " << c << " = " << k << endl;
+    cout << "Hasilnya adalah : " << k << " derajat Kelvin" << endl; 
+    break;
+
+    case 9:
+    cout << "-------- 9.) Anda memilih Kelvin -> Fahrenheit --------" << endl;
+    cout << "Masukkan suhu Kelvin yang diketahui : "; 
+    cin >> k;
+    f = 9.0/5.0 * (k-273)+32;
+    cout << "Rumusnya yaitu : 273 + c = 273 + " << k << " = " << f << endl;
+    cout << "Hasilnya adalah : " << f << " derajat Fahrenheit" << endl; 
+    break;
+
+    case 10:
+    cout << "-------- 10.) Anda memilih Fahrenheit -> Kelvin --------" << endl;
+    cout << "Masukkan suhu fahrenheit yang diketahui : "; 
+    cin >> f;
+    k = 5.0/9.0 * (f - 32) + 273;
+    cout << "Rumusnya yaitu : 5/9 * (f - 32) + 273 = 5/9 * ( " << f << " - 32) + 273 = " << k << endl;
+    cout << "Hasilnya adalah : " << k << " derajat Kelvin" << endl; 
+    break;
+
+    case 11:
+    cout << "-------- 11.) Anda memilih Kelvin -> Reamur --------" << endl;
+    cout << "Masukkan suhu kelvin yang diketahui : "; 
+    cin >> k;
+    r = 4.0/5.0 * (k  - 273);
+    cout << "Rumusnya yaitu : 4/5 * (k - 273) = 4/5 * (" << k << " - 273) = " << r << endl;
+    cout << "Hasilnya adalah : " << r << " derajat Reamur" << endl; 
+    break;
+
+    case 12:
+    cout << "-------- 12.) Anda memilih Reamur ->  Kelvin --------" << endl;
+    cout << "Masukkan suhu Reamur yang diketahui : "; 
+    cin >> r;
+    k = (5.0/4.0 * r)+ 273;
+    cout << "Rumusnya yaitu : 4/5 * (k - 273) = 4/5 * (" << r << " - 273) = " << k << endl;
+    cout << "Hasilnya adalah : " << k << " derajat Kelvin" << endl; 
+    break;
+ 
+    default:
+    cout << " pilihan tidak sesuai pada tabel " <<endl;
+        break;
+    }
+    cout   << "Apakah anda ingin mencoba program ini lagi ? [Y/N] : "; cin >> j;
+    cout << endl;
+    cout << endl;
+}
+while (j == 'Y' || j == 'y');
+cout << "Terima kasih telah mennggunakan program ini " << endl;
+cout << "Made by Ikkoc_awinata" << endl;
+}

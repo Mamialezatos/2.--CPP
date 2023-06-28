@@ -1,0 +1,379 @@
+#include<iostremam>
+#include<string.h>
+#include<math.h>
+#include<cmath>
+using namespace std;
+
+void sambutan(){
+   cout <<"================================================================================"<< endl;
+    cout << "       S E L A G A T   D A T A N G   D I   P R O G R A G " << endl;
+    cout << "                  CONVERT SATUAN BERAT " << endl;
+}
+
+void table(){
+    cout <<"================================================================================"<< endl;
+    cout <<"NO |                 SATUAN PANJANG               "<< endl;
+    cout <<"================================================================================"<< endl;
+    cout <<"1.  | KG (kilogram)       ->   HG (hektogram)                                 |"<< endl;
+    cout <<"2.  | KG (kilogram)       ->   DAG (dekagram)                                 |"<< endl;
+    cout <<"3.  | KG (kilogram)       ->   G (gram)                                       |"<< endl;
+    cout <<"4.  | KG (kilogram)       ->   DG (desigram)                                  |"<< endl;
+    cout <<"5.  | KG (kilogram)       ->   CG (centigram)                                 |"<< endl;
+    cout <<"6.  | KG (kilogram)       ->   MG (miligram)                                  |"<< endl;
+    cout <<"7.  | HG (hektogram)      ->   KG (kilogram)                                  |"<< endl;
+    cout <<"8.  | HG (hektogram)      ->   DAG (dekagram)                                 |"<< endl;
+    cout <<"9.  | HG (hektogram)      ->   G (gram)                                       |"<< endl;
+    cout <<"10. | HG (hektogram)      ->   DG (desigram)                                  |"<< endl;
+    cout <<"11. | HG (hektogram)      ->   CG (centigram)                                 |"<< endl;
+    cout <<"12. | HG (hektogram)      ->   MG (miligram)                                  |"<< endl;
+    cout <<"13. | DAG (dekagram)      ->   KG (kilogram)                                  |"<< endl;
+    cout <<"14. | DAG (dekagram)      ->   HG (hektogram)                                 |"<< endl;
+    cout <<"15. | DAG (dekagram)      ->   G (gram)                                       |"<< endl;
+    cout <<"16. | DAG (dekagram)      ->   DG (desigram)                                  |"<< endl;
+    cout <<"17. | DAG (dekagram)      ->   CG (centigram)                                 |"<< endl;
+    cout <<"18. | DAG (dekagram)      ->   MG (miligram)                                  |"<< endl;
+    cout <<"19. | G (gram)            ->   KG (kilogram)                                  |"<< endl;
+    cout <<"20. | G (gram)            ->   HG (hektogram)                                 |"<< endl;
+    cout <<"21. | G (gram)            ->   DAG (dekagram)                                 |"<< endl;
+    cout <<"22. | G (gram)            ->   DG (desigram)                                  |"<< endl;
+    cout <<"23. | G (gram)            ->   CG (centigram)                                 |"<< endl;
+    cout <<"24. | G (gram)            ->   MG (Milieter)                                  |"<< endl;
+    cout <<"25. | DG (desigram)       ->   KG (kilogram)                                  |"<< endl;
+    cout <<"26. | DG (desigram)       ->   HG (hektogram)                                 |"<< endl;
+    cout <<"27. | DG (desigram)       ->   DAG (dekagram)                                 |"<< endl;
+    cout <<"28. | DG (desigram)       ->   G (gram)                                       |"<< endl;
+    cout <<"29. | DG (desigram)       ->   CG (centigram)                                 |"<< endl;
+    cout <<"30. | DG (desigram)       ->   MG (miligram)                                  |"<< endl;
+    cout <<"31. | CG (centigram)      ->   KG (kilogram)                                  |"<< endl;
+    cout <<"32. | CG (centigram)      ->   HG (hektogram)                                 |"<< endl;
+    cout <<"33. | CG (centigram)      ->   DAG (dekagram)                                 |"<< endl;
+    cout <<"34. | CG (centigram)      ->   G (gram)                                       |"<< endl;
+    cout <<"35. | CG (centigram)      ->   DG (desigram)                                  |"<< endl;
+    cout <<"36. | CG (centigram)      ->   MG (miligram)                                  |"<< endl;
+    cout <<"37. | MG (miligram)       ->   KG (kilogram)                                  |"<< endl;
+    cout <<"38. | MG (miligram)       ->   HG (hektogram)                                 |"<< endl;
+    cout <<"39. | MG (miligram)       ->   DAG (dekagram)                                 |"<< endl;
+    cout <<"40. | MG (miligram)       ->   G (gram)                                       |"<< endl;
+    cout <<"41. | MG (miligram)       ->   DG (desigram)                                  |"<< endl;
+    cout <<"42. | MG (miligram)       ->   CG (centigram)                                 |"<< endl;
+    cout <<"================================================================================"<< endl;
+}
+
+int main(){
+    sambutan();
+    table();
+    char j;
+    int pilihan, user, hasil,rumus;
+    float rumus1;
+
+do{
+       cout << "Silahkan pilih sesuai pada tabel : " ; cin >> pilihan;
+
+       switch (pilihan){
+    case 1:
+        cout << " ------ 1.) KG -> HG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10 ;
+        cout <<  user << " * 10  = " << rumus << " HG " << endl;
+        break;
+
+    case 2:
+        cout << " ------ 2.) KG -> DAG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100 ;
+        cout <<  user << " * 100  = " << rumus << " DAG " << endl;
+        break;
+
+    case 3:
+        cout << " ------ 3.) KG -> G --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000 ;
+        cout <<  user << " * 1000  = " << rumus << " G " << endl;
+        break;
+
+    case 4 :
+        cout << " ------ 4.) KG -> DG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10000 ;
+        cout <<  user << " * 10000  = " << rumus << " DG " << endl;
+        break;
+
+    case 5 :
+        cout << " ------ 5.) KG -> CG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100000 ;
+        cout <<  user << " * 100000  = " << rumus << " CG " << endl;
+        break;
+
+    case 6 :
+        cout << " ------ 6.) KG -> MG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000000 ;
+        cout <<  user << " * 1000000  = " << rumus << " MG " << endl;
+        break;
+
+    case 7 :
+        cout << " ------ 7.) HG -> KG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " KG " << endl;
+        break;
+       
+    case 8 :
+        cout << " ------ 8.) HG -> DAG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " DAG " << endl;
+        break;
+
+    case 9:
+        cout << " ------ 9.) HG -> G --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " G " << endl;
+        break;
+
+    case 10:
+        cout << " ------ 10.) HG -> DG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000;
+        cout <<  user << " * 1000  = " << rumus << " DG " << endl;
+        break;
+
+    case 11:
+        cout << " ------ 11.) HG -> CG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10000;
+        cout <<  user << " * 10000  = " << rumus << " CG " << endl;
+        break;
+
+   case 12:
+        cout << " ------ 12.) HG -> MG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100000;
+        cout <<  user << " * 100000  = " << rumus << " MG " << endl;
+        break;
+
+    case 13:
+        cout << " ------ 13.) DAG -> KG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " KG " << endl;
+        break;
+
+    case 14:
+        cout << " ------ 14.) DAG -> HG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " HG " << endl;
+        break;
+
+    case 15:
+        cout << " ------ 15.) DAG -> G --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " G " << endl;
+        break;
+
+    case 16:
+        cout << " ------ 16.) DAG -> DG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " DG " << endl;
+        break;
+
+    case 17:
+        cout << " ------ 17.) DAG -> CG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000;
+        cout <<  user << " * 1000  = " << rumus << " CG " << endl;
+        break;
+
+    case 18:
+        cout << " ------ 18.) DAG -> MG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10000;
+        cout <<  user << " * 10000  = " << rumus << " MG " << endl;
+        break;
+
+    case 19:
+        cout << " ------ 19.) G -> KG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " KG " << endl;
+        break;
+
+    case 20:
+        cout << " ------ 20.) G -> HG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " HG " << endl;
+        break;
+
+    case 21:
+        cout << " ------ 21.) G -> DAG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " DAG " << endl;
+        break;
+
+    case 22:
+        cout << " ------ 22.) G -> DG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " DG " << endl;
+        break;
+
+    case 23:
+        cout << " ------ 23.) G -> CG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " CG " << endl;
+        break;
+
+    case 24:
+        cout << " ------ 24.) G -> MG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000;
+        cout <<  user << " / 1000  = " << rumus << " MG " << endl;
+        break;
+
+    case 25:
+        cout << " ------ 25.) DG -> KG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10000;
+        cout <<  user << " / 10000  = " << rumus1 << " KG " << endl;
+        break;
+
+    case 26:
+        cout << " ------ 26.) DG -> HG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " HG " << endl;
+        break;
+
+    case 27:
+        cout << " ------ 27.) DG -> DAG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " DAG " << endl;
+        break;
+
+    case 28:
+        cout << " ------ 28.) DG -> G --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " G " << endl;
+        break;
+
+    case 29:
+        cout << " ------ 29.) DG -> CG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " CG " << endl;
+        break;
+
+  case 30:
+        cout << " ------ 30.) DG -> MG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " MG " << endl;
+        break;
+
+   case 31:
+        cout << " ------ 31.) CG -> KG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100000;
+        cout <<  user << " / 100000  = " << rumus1 << " KG " << endl;
+        break;
+
+    case 32:
+        cout << " ------ 32.) CG -> HG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10000;
+        cout <<  user << " / 10000  = " << rumus1 << " HG " << endl;
+        break;
+
+    case 33:
+        cout << " ------ 33.) CG -> DAG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " DAG " << endl;
+        break;
+
+    case 34:
+        cout << " ------ 34.) CG -> G --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " G " << endl;
+        break;
+
+    case 35:
+        cout << " ------ 35.) CG -> DG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " DG " << endl;
+        break;
+
+    case 36:
+        cout << " ------ 36.) CG -> MG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " MG " << endl;
+        break;
+
+    case 37:
+        cout << " ------ 37.) MG -> KG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000000;
+        cout <<  user << " / 1000000  = " << rumus1 << " KG " << endl;
+        break;
+
+    case 38:
+        cout << " ------ 38.) MG -> HG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100000;
+        cout <<  user << " / 100000  = " << rumus1 << " HG " << endl;
+        break;
+
+    case 39:
+        cout << " ------ 39.) MG -> DAG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10000;
+        cout <<  user << " / 10000  = " << rumus1 << " DAG " << endl;
+        break;
+
+    case 40:
+        cout << " ------ 40.) MG -> G --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " G " << endl;
+        break;
+
+    case 41:
+        cout << " ------ 41.) MG -> DG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " DG " << endl;
+        break;
+
+    case 42:
+        cout << " ------ 41.) MG -> CG --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " CG " << endl;
+        break;
+
+       default:
+       cout << "Pilihan tidak sesuai dengan tabel " << endl;
+       cout << "Silahkan masukkan pilihan anda sesuai dengan tabel " << endl;
+        break;
+
+       } cout << endl;
+       cout << "Ingin mencoba lagi [Y/N] ? "; 
+       cin >> j;
+}while (j == 'Y' || j == 'y');
+cout << "================================================"<< endl;
+cout << " Terima kasih telah menggunakan program ini " << endl;
+cout << " Made by Ikoc_winata " << endl;
+}

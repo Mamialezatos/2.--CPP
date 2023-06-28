@@ -1,0 +1,526 @@
+#include<iostream>
+#include<string.h>
+#include<math.h>
+#include<cmath>
+using namespace std;
+
+void sambutan(){
+    cout << "======================================================================"<< endl;
+    cout << "   S E L A M A T   D A T A N G   D I   P R O G R A M " << endl;
+    cout << "  KUMPULAN RUMUS LUAS PERMUKAAN BANGUNAN DAN VOLUME" << endl;
+    cout << "======================================================================"<< endl;
+}
+
+void table(){
+    cout <<"================================================================================" << endl;
+    cout <<"================================================================================"<< endl;
+    cout <<"A. R U M U S  K E L I L I N G  &  L U A S  B A N G U N  D A T A R \t\t "<< endl;
+    cout <<"================================================================================"<< endl;
+    cout <<"1. | Menghitung Keliling Lingkaran (JARI-JARI) (phi = 22/7)               \t|"<< endl;
+    cout <<"2. | Menghitung Keliling Lingkaran (DIAMETER) (phi = 22/7)                \t|"<< endl;
+    cout <<"3. | Menghitung Keliling Lingkaran (JARI-JARI) (phi = 3,14)               \t|"<< endl;
+    cout <<"4. | Menghitung Keliling Lingkaran (DIAMETER) (phi = 3,14)                \t|"<< endl;
+    cout <<"5. | Menghitung Panjang Busur pada Lingkaran                              \t|"<< endl;
+    cout <<"6. | Menghitung Keliling Persegi                                          \t|"<< endl;
+    cout <<"7. | Menghitung Luas Persegi                                              \t|"<< endl;
+    cout <<"8. | Menghitung Keliling Persegi Panjang                                  \t|"<< endl;
+    cout <<"9. | Menghitung Luas Persegi Panjang                                      \t|"<< endl;
+    cout <<"10.| Menghitung Keliling Jajar Genjang                                    \t|"<< endl;
+    cout <<"11.| Menghitung Luas Jajar Genjang                                        \t|"<< endl;
+    cout <<"12.| Menghitung Keliling Segitiga                                         \t|"<< endl;
+    cout <<"13.| Menghitung Luas Segitiga                                             \t|"<< endl;
+    cout <<"14.| Menghitung Luas Belah Ketupat                                        \t|"<< endl;
+    cout <<"15.| Menghitung Luas Trapesium                                            \t|"<< endl;
+    cout <<"=============================================================================="<< endl;
+    cout <<"B. R U M U S  L U A S  P E R M U K A A N  &  V O L U M E  B A N G U N  R U A N G"<< endl;
+    cout <<"=============================================================================="<< endl;
+    cout <<"16.| Menghitung Luas Kubus                                                \t|"<< endl;
+    cout <<"17.| Menghitung Volume Kubus                                              \t|"<< endl;
+    cout <<"18.| Menghitung Luas Balok                                                \t|"<< endl;
+    cout <<"19.| Menghitung Volume Balok                                              \t|"<< endl;
+    cout <<"20.| Menghitung Luas Permukaan Limas Segiempat                            \t|"<< endl;
+    cout <<"21.| Menghitung Volume Limas Segiempat                                    \t|"<< endl;
+    cout <<"22.| Menghitung Volume Prisma Segitiga                                    \t|"<< endl;
+    cout <<"23.| Menghitung Luas Prisma Segitiga                                      \t|"<< endl;
+    cout <<"24.| Menghitung Volume Limas Segitiga                                     \t|"<< endl;
+    cout <<"25.| Menghitung Luas Selimut Tabung (Jari-Jari)                           \t|"<< endl;
+    cout <<"26.| Menghitung Luas Selimut Tabung (diameter)                            \t|"<< endl;
+    cout <<"27.| Menghitung Luas Permukaan Tabung (Jari-Jari)                         \t|"<< endl;
+    cout <<"28.| Menghitung Volume Tabung (Jari-Jari)                                 \t|"<< endl;
+    cout <<"29.| Menghitung Luas Selimut Kerucut                                      \t|"<< endl;
+    cout <<"30.| Menghitung Luas Permukaan Kerucut                                    \t|"<< endl;
+    cout <<"31.| Menghitung Volume Kerucut                                            \t|"<< endl;
+    cout <<"32.| Menghitung Luas Bola                                                 \t|"<< endl;
+    cout <<"33.| Menghitung Volume Bola                                               \t|"<< endl;
+    cout <<"=============================================================================="<< endl;
+       
+}
+
+int main(){
+    char j;
+    float r,d,t,T, phi, Phi,rumus, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a;
+    int pilihan,L_selimut,sisisegitiga,sqrt, akar,Lp_PS, rumus1, rumus2;
+sambutan();
+table();
+
+do{
+cout << "Silahkan masukan pilihan anda yang sesuai [1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33] ? :" << endl;
+cin >> pilihan;
+
+switch(pilihan){
+    case 1 :
+    cout << "\n----- 1.) MENGHITUNG KELILING LINGKARAN (JARI-JARI) (phi = 22/7) ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan jari-jari lingkaran : " << endl;
+    cin>>r;
+    phi = 22.0/7.0;
+    rumus = 2 * phi * r;
+    cout << "Rumusnya yaitu : '2*phi*r' = '2*22/7*" << r << endl;
+    cout << "Hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+ case 2 :
+    cout << "\n----- 2.) MENGHITUNG KELILING LINGKARAN (DIAMETER) (phi = 22/7) ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan diameter lingkaran : "; 
+    cin>>d;
+    phi = 22.0/7.0;
+    rumus = phi * d;
+    cout << "Rumusnya yaitu : phi*d' = '22/7*" << d << endl;
+    cout << "Hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+ case 3 :
+    cout << "\n-----3.) MENGHITUNG KELILING LINGKARAN (JARI-JARI) (phi = 3,14) ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan jari-jari lingkaran : ";
+    cin>>r;
+    Phi = 3.14;
+    rumus = 2 * Phi * r;
+    cout << "Rumusnya yaitu : '2*phi*r' = '2*3.14*" << r << endl;
+    cout << "Hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+case 4:
+    cout << "\n-----4.) MENGHITUNG KELILING LINGKARAN (DIAMETER) (phi = 3,14) -----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan diameter lingkaran : ";
+    cin>>d;
+    Phi = 3.14;
+    rumus = 2 * Phi * d;
+    cout << "Rumusnya yaitu : '2*phi*d' = '2*3.14*" << d << endl;
+    cout << "Hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+case 5:
+    cout << "\n---- 5.) MENGHITUNG PANJANG BUSUR LINGKARAN ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan busur lingkaran : ";
+    cin>>busur;
+    cout << "Masukkan jari-jari atau diameter busur lingkaran : " << endl;
+    cin >> jari;
+    Phi = 3.14;
+    phi = 22.0/7.0;
+    rumusa = busur/360 * Phi * jari * 2;
+    rumusb = busur/360 * phi * jari * 2;
+    cout <<" Rumusnya A (phi=3,14) yaitu : busur/360*phi*r*2 = " << busur << "/360 *3.14*" << jari << "*2 = " << rumusa << " cm " << endl;
+    cout <<" Rumusnya B (phi=22/7) yaitu : busur/360*phi*r*2 = " << busur << "/360 *22/7*" << jari << "*2 = " << rumusb << " cm " << endl;
+    cout << endl;
+    break;
+
+case 6:
+    cout << "\n---- 6.) MENGHITUNG KELILING PERSEGI ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan sisi persegi : "; 
+    cin>>sisi;
+    keliling = 4 * sisi;
+    cout <<"Rumusnya yaitu : 4 * sisi = 4 *" <<  sisi << "keliling" << endl;
+    cout <<"hasilnya adalah : " << keliling <<  " cm " << endl;
+    cout << endl;
+    break;
+
+case 7:
+    cout << "\n---- 7.) MENGHITUNG LUAS PERSEGI ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan sisi persegi : ";
+    cin>>sisi;
+    L = sisi * sisi;
+    cout <<"Rumusnya yaitu : L = s * s ="<< sisi << "*" << sisi << "=" << L << endl;
+    cout <<"hasilnya adalah : " << L <<  " cm " << endl;
+    cout << endl;
+    break;
+
+case 8:
+    cout << "\n---- 8.) MENGHITUNG KELILING PERSEGI PANJANG ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan panjang bangunan: ";
+    cin>>panjang;
+    cout << " Masukkan lebar bangunan: " ;
+    cin >>lebar;
+    keliling = 2 * (panjang + lebar);
+    cout <<"Rumusnya yaitu : Keliling = 2*(panjang + Lebar) = 2 * ( " << panjang << " + " << lebar << " ) = " << keliling << endl;
+    cout <<"hasilnya adalah : " << keliling << "cm" << endl;
+    cout << endl;
+    break;
+
+case 9:
+    cout << "\n---- 9.) MENGHITUNG LUAS PERSEGI PANJANG ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan panjang bangunan: ";
+    cin>>panjang;
+    cout << " Masukkan lebar bangunan: ";
+    cin >>lebar;
+    L = panjang * lebar;
+    cout <<"Rumusnya adalah : Luas = panjang * lebar = " << panjang << " * " << lebar << " = " << L << endl;
+    cout <<"hasilnya adalah : " << L << " cm " << endl;
+    cout << endl;
+    break;
+
+case 10:
+    cout << "\n---- 10.) MENGHITUNG KELILING JAJAR GENJANG ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan panjang bangunan: ";
+    cin>>panjang;
+    cout << " Masukkan lebar bangunan: ";
+    cin >>lebar;
+    keliling = 2 * (panjang + lebar);
+    cout <<"Rumusnya yaitu : 2*(a+b) = 2 * " << panjang << " * " << lebar << " = " << keliling << endl;
+    cout <<"hasilnya adalah : " << keliling << " cm " << endl;
+    cout << endl;
+    break;
+
+
+case 11:
+    cout << "\n---- 11.) MENGHITUNG LUAS JAJAR GENJANG ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan alas bangunan: ";
+    cin>>alas;
+    cout << " Masukkan tinggi bangunan: ";
+    cin >>t;
+    L =  alas * t;
+    cout << "Rumusnya yaitu : Luas = alas * Tinggi = " << alas << " * " << t <<  " = " << L << endl;
+    cout <<"hasilnya adalah : " << L << " cm " << endl;
+    cout << endl;
+    break;
+
+
+case 12:
+    cout << "\n---- 12.) MENGHITUNG KELILING SEGITIGA ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan p : ";
+    cin>>p;
+    cout << " Masukkan q : ";
+    cin >>q;
+    cout << " Masukkan r : ";
+    cin >> r;
+    keliling = p+q+r;
+    cout << "rumusnya yaitu : Keliling = P + Q + R =" << p << " + " << q << " + " << r <<" = " << keliling << endl;
+    cout <<"hasilnya adalah : " << keliling << " cm " << endl;
+    cout << endl;
+    break;
+
+case 13:
+    cout << "\n---- 13.)MENGHITUNG LUAS SEGITIGA ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan alas : "; cin >> alas;
+    cout << " Masukkan tinggi :" ; cin >> t;
+    L =  1.0/2.0 * alas * t;
+    cout <<"Rumusnya yaitu : Luas = 1/2 * alas * tinggi = 1/2 *" << alas << " * " << t << " = " << L << endl;
+    cout <<"hasilnya adalah : " << L << " cm " << endl;
+    cout << endl;
+    break;
+
+case 14:
+    cout << "\n---- 14.)MENGHITUNG LUAS BELAH KETUPAT ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan diagonal 1  : " ; cin >> p;
+    cout << " Masukkan diagonal 2  : " ; cin >> q;
+    L =  1.0/2.0 * p * q;
+    cout << "Rumusnya yaitu : Luas =  1/2 * D1 * D2 = 1/2 * " << p << " * " << q << " = " << L << endl;
+    cout <<"hasilnya adalah : " << L << " cm " << endl;
+    return L;
+    cout << endl;
+    break;
+
+case 15:
+    cout << "\n---- 15.)MENGHITUNG TRAPESIUM ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan a  : " ; cin >> p;
+    cout << " Masukkan b  : " ; cin >> q;
+    cout << "Masukkan tinggi trapesium : "; cin >> t;
+    L =  (p+q)/2 * t;
+    cout <<"Rumusnya yaitu :(A+B)/2 * Tinggi = (" << p <<" + " << q <<" ) / 2 * " << t << " = " << L << endl;
+    cout <<"hasilnya adalah : " << L << " cm " << endl;
+    cout << endl;
+    break;
+
+case 16:
+    cout << "\n---- 16.)MENGHITUNG LUAS KUBUS ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan rusuk kubus : " ; cin >> r;
+    rumus =  6 * r * r;
+    cout <<"Rumusnya yaitu : Luas = 6 * rusuk * rusuk = 6 * " << r << " * " << r << " = " << rumus << endl;
+    cout <<"hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+
+case 17:
+    cout << "\n---- 17.)MENGHITUNG VOLUME KUBUS  ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan rusuk kubus : " ; cin >> r;
+    rumus =  r * r * r;
+    cout <<"Rumusnya yaitu : Volume = rusuk * rusuk * rusuk = "<< r << " * " << r << " * " <<  r << " = " << rumus <<  endl;
+    cout <<"hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+case 18:
+    cout << "\n---- 18.)MENGHITUNG LUAS BALOK ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan panjang: " ; cin >> p;
+    cout << " Masukkan lebar " ; cin >> q;
+    cout << " Masukkan tinggi " ; cin >> t;
+    rumus =  2*(p * q) + 2*(p * t) + 2*(q * t);
+    cout <<"Rumusnya yaitu : Luas = 2*(Panjang * lebar) + 2*(Panjang * tinggi) + 2*(lebar*tinggi) = 2 * (" << p << " * " << q << ") + 2 * (" << p << " * " << t << ") + 2*(" << p  << " * " << t << ") = " << rumus << endl;
+    cout <<"hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+
+case 19:
+    cout << "\n---- 19.)MENGHITUNG VOLUME BALOK  ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan panjang : " ; cin >> p;
+    cout << " Masukkan luas alas : " ; cin >> q;
+    cout << " Masukkan tinggi : " ; cin >> t;
+    rumus =  p * q * t;
+    cout <<"Rumusnya yaitu : Volume = Panjang * Luas Alas * Tinggi = " <<  p << " * " << q << " * " << t << " = " << rumus << endl;
+    cout <<"hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+
+
+case 20:
+    cout << "\n---- 20.) MENGHITUNG LUAS PERMUKAAN LIMAS SEGIEMPAT ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan sisi alasnya : " ; cin >> sisi;
+    cout << " Masukkan tinggi alas  : " ; cin >> t;
+    L_alas = sisi * sisi;
+    L_segitiga = 1.0/2.0 * sisi * t;
+    L_limas =  (4 * L_segitiga) + L_alas;
+    cout <<"Rumusnya yaitu : Luas = (4 * Luas Segitiga) + Luas Alas = (4 * " << L_segitiga << " ) + " << L_alas << " = " << L_limas << endl;
+    cout <<"hasilnya adalah : " << L_limas << " cm " << endl;
+    cout << endl;
+    break;
+
+
+case 21:
+    cout << "\n---- 21.) MENGHITUNG VOLUME LIMAS SEGIEMPAT ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan luas alas : " ; cin >> L_alas;
+    cout << " Masukkan tinggi limas  : " ; cin >> t;
+    rumus = 1.0/3.0 * L_alas * t;
+    cout <<"Rumusnya yaitu : Volume = 1/3 * Luas Alas * Tinggi = 1/3 * " << L_alas << " * " << t << " = " << rumus << endl;
+    cout <<"hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+
+case 22:
+    cout << "\n---- 22.) MENGHITUNG VOLUME PRISMA SEGITIGA ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << " Masukkan luas alas : " ; cin >> L_alas;
+    cout << " Masukkan tinggi limas  : " ; cin >> t;
+    cout << " Masukkan tinggi T  : " ; cin >> T;
+    LALAS = 1.0/2.0*L_alas*t;
+    rumus = LALAS * T;
+    cout <<"Rumusnya yaitu : Volume = 1/2 * alas * tinggi * Tinggi = 1/2 *" << L_alas << " * " << t << " * " << T <<  " = " << rumus << endl;
+    cout <<"hasilnya adalah : " << rumus << " cm " << endl;
+    cout << endl;
+    break;
+
+
+case 23:
+    cout << "\n---- 23.) MENGHITUNG LUAS PERMUKAAN PRISMA SEGITIGA ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout <<" Lp Prisma Segitiga = Luas Selimut + Luas Alas" << endl;
+    cout << " Masukkan sisi : " ; cin >> sisi;
+    cout << " Masukkan sisi lebar : " ; cin >> lebar;
+    cout << "Masukkan lebar prisma : "; cin >> L;
+    sisisegitiga = pow(lebar,2) - pow(L,2);
+    cout <<"hasil sisi segitiga yang hasilnya berbentuk akar  : " << sisisegitiga << endl;
+    sqrt = pow(sisisegitiga, 0.5);
+    cout << "akar dari '" << sisisegitiga << "' yaitu : " << sqrt << endl;
+    L_selimut = (sisi*lebar) + (sisi*L) +(sisi*sqrt);
+    cout << "Luas selimutnya adalah : " << L_selimut << endl;
+    cout << endl;
+    cout << "eittsss ini belum selesai.....tekan enter untuk melihat hasil Luas Permukaan Prisma Segitiga" << endl;
+    L_alas = 2*(1.0/2.0*sqrt*L);
+    Lp_PS = L_alas + L_selimut;
+    cout << "Rumusnya yaitu : Luas = 2 * (1/2 * sisi segitiga * lebar) + (panjang * lebar ) + (panjang * lebar(sisi segitiga) + (panjang * tinggi)" << endl;
+    cout << "\t      :2*(1/2*" << sqrt << " * " << L << ") + (" << sisi <<  " * " << lebar << ") + (" << sisi << " * " << sisisegitiga <<"  ) + (" <<  sisi << " * " <<  sqrt << " ) = " << Lp_PS << endl;
+    cout << "hasil dari Luas Permukaan Prisma Segitiga adalah : " <<  Lp_PS << "cm" << endl;
+    break;
+
+
+case 24:
+    cout << "\n---- 24.) MENGHITUNG VOLUME LIMAS SEGITIGA ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout <<" Masukkan alas limas segitiga : " ; cin >> a;
+    cout << "Masukkan tinggi limas segitiga : "; cin >> T;
+    cout << "Masukkan tinggi alas limas : "; cin >> t;
+    rumus = 1.0/3.0*a*T*t;
+    cout << "Rumusnya yaitu : 1/3 *a*T*t = 1/3 * "<< a << " * " <<  T << " * " <<  t <<  " = " << rumus << endl;
+    cout << "maka volume limas segitiga adalah : " << rumus <<"cm" << endl;
+    break;
+
+case 25:
+    cout << "\n---- 25.) MENGHITUNG LUAS SELIMUT TABUNG (JARI-JARI) ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari : " ; cin >> r;
+    cout << "Masukkan tinggi tabung : "; cin >> T;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = 2*Phi*r*T;
+    rumus =  2*(phi*r)*T;
+    cout << "Rumus A yaitu : Luas = 2*Phi*r*tinggi = 2*" << phi << " * " << r << " * " << T << " = " << rumus << endl;
+    cout << "Rumus B yaitu : Luas = 2*Phi*r*tinggi = 2*22/7*" << r << " * " << T << " = " <<  rumusa << endl;
+    cout << "hasil luas selimut (phi=3,14) : " << rumus << " cm " << endl;
+    cout << "hasil luas selimut (phi=22/7) : " <<  rumusa << " cm" << endl;
+    break;
+
+case 26:
+    cout << "\n---- 26.) MENGHITUNG LUAS SELIMUT TABUNG (DIAMETER) ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan diameter tabung : " ; cin >> d;
+    cout << "Masukkan tinggi tabung : "; cin >> T;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = Phi*d*T;
+    rumus = phi*d*T;
+    cout << "Rumus A yaitu : Luas = phi * diameter * tinggi = 3.14 * " << d << " * " << T << " = " << rumus << endl;
+    cout << "Rumus B yaitu : Luas = phi * diameter * tinggi = 22/7 * " << d << " * " << T << " = " << rumusa << endl;
+    cout << "hasil luas selimut (phi=22/7) : " << rumusa << " cm " << endl;
+    cout << "hasil luas selimut (phi=3,14) : " << rumus << " cm " << endl;
+    break;
+
+case 27:
+    cout << "\n---- 27.) MENGHITUNG LUAS PERMUKAAN TABUNG (JARI-JARI) ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari tabung : " ; cin >> r;;
+    cout << "Masukkan tinggi tabung : "; cin >> T;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = 2*(phi*r)*(r+T);
+    rumus = 2*(Phi*r)*(r+T);
+    cout << "Rumus A yaitu : Luas = 2 * (phi * r) * (jari-jari + tinggi) = 2 * (3,14 * " << r << " * ) * (" << r << " + " << T << " ) = " << rumusa << endl;
+    cout << "Rumus B yaitu : Luas = 2 * (phi * r) * (jari-jari + tinggi) = 2 * (22/7 * " << r << " * ) * (" << r << " + " << T << " ) = " << rumus << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumusa << " cm" << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumus << " cm" << endl;
+    break;
+
+case 28:
+    cout << "\n---- 28.) MENGHITUNG VOLUME TABUNG (JARI-JARI) ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari volume tabung : " ; cin >> r;;
+    cout << "Masukkan tinggi tabung : "; cin >> T;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = phi*pow(r,2)*T;
+    rumus = Phi*pow(r,2)*T;
+    cout << "Rumus A yaitu : Volume = Phi * (r pangkat 2 * tinggi ) = 22/7 * " << pow(r,2) << " * " << T << " = " << rumusa << endl;
+    cout << "Rumus B yaitu : Volume = Phi * (r pangkat 2 * tinggi ) = 3.14 * " << pow(r,2) << " * " << T << " = " << rumus << endl;
+    break;
+
+case 29:
+    cout << "\n---- 29.) MENGHITUNG LUAS SELIMUT KERUCUT ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari kerucut : " ; cin >> r;;
+    cout << "Masukkan sisi kerucut : "; cin >> sisi;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = Phi*r*sisi;
+    rumus = phi*r*sisi;
+    cout << "Rumus A yaitu : Luas = phi * r * sisi =  3.14 * " << r << " * " << sisi <<  " = " <<  rumus << endl;
+    cout << "Rumus B yaitu : Luas = phi * r * sisi =  22/7 * " << r << " * " << sisi << " = " << rumusa << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumus << " cm " << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumusa << " cm " << endl;
+    break;
+
+case 30:
+    cout << "\n---- 30.) MENGHITUNG LUAS PERMUKAAN KERUCUT ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari kerucut : " ; cin >> r;;
+    cout << "Masukkan sisi kerucut : "; cin >> sisi;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = Phi*r*sisi;
+    rumus = phi*r*sisi;
+    rumus1 = (Phi*r*sisi) + (Phi* pow(r,2));
+    rumus2 = (phi*r*sisi) + (Phi* pow(r,2));
+    cout << "Rumus A yaitu : Luas = (phi * r * sisi) + (phi * r pangkat 2 = ( 22/7 * " << r << " * " << sisi << " ) + (22/7 * " << pow(r,2) << " ) = " << rumus1 << endl;
+    cout << "Rumus B yaitu : Luas = (phi * r * sisi) + (phi * r pangkat 2 = ( 3.14 * " << r << " * " << sisi << " ) + (3.14 * " << pow(r,2) << " ) = " << rumus2 << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumus1 << " cm " << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumus2 << " cm " << endl;
+    break;
+
+
+case 31:
+    cout << "\n---- 31.) MENGHITUNG VOLUME KERUCUT ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari kerucut : " ; cin >> r;
+    cout << "Masukkan tinggi kerucut : " ; cin >> T;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = 1/3*Phi*pow(r,2)*T;
+    rumusb = 1/3*phi*pow(r,2)*T;
+    cout << "Rumus A yaitu : Luas = 1/3 * phi * r pangkat 2 * tinggi = 1/3 * 22/7 * " << pow (r,2) << " * " << T << " = " <<  rumusa << endl;
+    cout << "Rumus B yaitu : Luas = 1/3 * phi * r pangkat 2 * tinggi = 1/3 * 3.14 *" << pow (r,2) << " * " << T << " = " <<  rumusb << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumusa << " cm " << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumusb << "cm " << endl;
+    break;
+
+
+case 32:
+    cout << "\n---- 32.) MENGHITUNG LUAS BOLA ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari atau diameter bola : " ; cin >> r;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = 4*Phi*pow(r,2);
+    rumusb = 4*phi*pow(r,2);
+    cout << "Rumus A yaitu : Luas = 4 * phi * r pangkat 2 = 4 * 22/7 * " << pow (r,2) << " = " << rumusa << endl;
+    cout << "Rumus B yaitu : Luas = 4 * phi * r pangkat 2 = 4 * 3.14 * " << pow (r,2) << " = " << rumusb << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " <<  rumusa << " cm " << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : "<< rumusb << " cm " << endl;
+    break;
+
+
+case 33:
+    cout << "\n---- 33.) MENGHITUNG VOLUME BOLA ----" << endl;
+    cout << "===========================================================================" << endl;
+    cout << "Masukkan jari-jari atau diameter bola : " ; cin >> r;
+    phi = 3.14;
+    Phi = 22.0/7.0;
+    rumusa = 4.0/3.0*Phi*pow(r,3);
+    rumusb = 4.0/3.0*phi*pow(r,3);
+    cout << "Rumus A yaitu : Luas = 4/3 * phi * r pangkat 3 = 4/3 * 22/7 * " << pow(r,3) << " = " << rumusa << endl;
+    cout << "Rumus A yaitu : Luas = 4/3 * phi * r pangkat 3 = 4/3 * 3,14 * " << pow(r,3) << " = " << rumusb << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumusa << " cm " << endl;
+    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumusb << " cm " << endl;
+    break;
+
+}
+cout << "Ada yang bisa saya bantu lagi [Y/N] : ";
+cin >> j;
+}while (j == 'Y' || j == 'y');
+cout << "===========================================================" << endl;
+cout << " Terima kasih telah memakai program ini "<< endl;
+cout << "Made by Ikkoc_awinata"<< endl;
+}

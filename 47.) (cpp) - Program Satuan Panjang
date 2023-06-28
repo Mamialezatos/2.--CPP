@@ -1,0 +1,379 @@
+#include<iostream>
+#include<string.h>
+#include<math.h>
+#include<cmath>
+using namespace std;
+
+void sambutan(){
+   cout <<"================================================================================"<< endl;
+    cout << "       S E L A M A T   D A T A N G   D I   P R O G R A M " << endl;
+    cout << "                  CONVERT SATUAN PANJANG " << endl;
+}
+
+void table(){
+    cout <<"================================================================================"<< endl;
+    cout <<"NO |                 SATUAN PANJANG               "<< endl;
+    cout <<"================================================================================"<< endl;
+    cout <<"1.  | KM (Kilometer)       ->   HM (Hektometer)                                 |"<< endl;
+    cout <<"2.  | KM (Kilometer)       ->   DAM (Dekameter)                                 |"<< endl;
+    cout <<"3.  | KM (Kilometer)       ->   M (Meter)                                       |"<< endl;
+    cout <<"4.  | KM (Kilometer)       ->   DM (Desimeter)                                  |"<< endl;
+    cout <<"5.  | KM (Kilometer)       ->   CM (Centimeter)                                 |"<< endl;
+    cout <<"6.  | KM (Kilometer)       ->   MM (Milimeter)                                  |"<< endl;
+    cout <<"7.  | HM (Hektometer)      ->   KM (Kilometer)                                  |"<< endl;
+    cout <<"8.  | HM (Hektometer)      ->   DAM (Dekameter)                                 |"<< endl;
+    cout <<"9.  | HM (Hektometer)      ->   M (Meter)                                       |"<< endl;
+    cout <<"10. | HM (Hektometer)      ->   DM (Desimeter)                                  |"<< endl;
+    cout <<"11. | HM (Hektometer)      ->   CM (Centimeter)                                 |"<< endl;
+    cout <<"12. | HM (Hektometer)      ->   MM (Milimeter)                                  |"<< endl;
+    cout <<"13. | DAM (Dekameter)      ->   KM (Kilometer)                                  |"<< endl;
+    cout <<"14. | DAM (Dekameter)      ->   HM (Hektometer)                                 |"<< endl;
+    cout <<"15. | DAM (Dekameter)      ->   M (Meter)                                       |"<< endl;
+    cout <<"16. | DAM (Dekameter)      ->   DM (Desimeter)                                  |"<< endl;
+    cout <<"17. | DAM (Dekameter)      ->   CM (Centimeter)                                 |"<< endl;
+    cout <<"18. | DAM (Dekameter)      ->   MM (Milimeter)                                  |"<< endl;
+    cout <<"19. | M (Meter)            ->   KM (Kilometer)                                  |"<< endl;
+    cout <<"20. | M (Meter)            ->   HM (Hektometer)                                 |"<< endl;
+    cout <<"21. | M (Meter)            ->   DAM (Dekameter)                                 |"<< endl;
+    cout <<"22. | M (Meter)            ->   DM (Desimeter)                                  |"<< endl;
+    cout <<"23. | M (Meter)            ->   CM (Centimeter)                                 |"<< endl;
+    cout <<"24. | M (Meter)            ->   MM (Milieter)                                   |"<< endl;
+    cout <<"25. | DM (Desimeter)       ->   KM (Kilometer)                                  |"<< endl;
+    cout <<"26. | DM (Desimeter)       ->   HM (Hektometer)                                 |"<< endl;
+    cout <<"27. | DM (Desimeter)       ->   DAM (Dekameter)                                 |"<< endl;
+    cout <<"28. | DM (Desimeter)       ->   M (Meter)                                       |"<< endl;
+    cout <<"29. | DM (Desimeter)       ->   CM (Centimeter)                                 |"<< endl;
+    cout <<"30. | DM (Desimeter)       ->   MM (Milimeter)                                  |"<< endl;
+    cout <<"31. | CM (Centimeter)      ->   KM (Kilometer)                                  |"<< endl;
+    cout <<"32. | CM (Centimeter)      ->   HM (Hektometer)                                 |"<< endl;
+    cout <<"33. | CM (Centimeter)      ->   DAM (Dekameter)                                 |"<< endl;
+    cout <<"34. | CM (Centimeter)      ->   M (Meter)                                       |"<< endl;
+    cout <<"35. | CM (Centimeter)      ->   DM (Desimeter)                                  |"<< endl;
+    cout <<"36. | CM (Centimeter)      ->   MM (Milimeter)                                  |"<< endl;
+    cout <<"37. | MM (Milimeter)       ->   KM (Kilometer)                                  |"<< endl;
+    cout <<"38. | MM (Milimeter)       ->   HM (Hektometer)                                 |"<< endl;
+    cout <<"39. | MM (Milimeter)       ->   DAM (Dekameter)                                 |"<< endl;
+    cout <<"40. | MM (Milimeter)       ->   M (Meter)                                       |"<< endl;
+    cout <<"41. | MM (Milimeter)       ->   DM (Desimeter)                                  |"<< endl;
+    cout <<"42. | MM (Milimeter)       ->   CM (Centimeter)                                 |"<< endl;
+    cout <<"================================================================================"<< endl;
+}
+
+int main(){
+    sambutan();
+    table();
+    char j;
+    int pilihan, user, hasil,rumus;
+    float rumus1;
+
+do{
+       cout << "Silahkan pilih sesuai pada tabel : " ; cin >> pilihan;
+
+       switch (pilihan){
+    case 1:
+        cout << " ------ 1.) KM -> HM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10 ;
+        cout <<  user << " * 10  = " << rumus << " HM " << endl;
+        break;
+
+    case 2:
+        cout << " ------ 2.) KM -> DAM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100 ;
+        cout <<  user << " * 100  = " << rumus << " DAM " << endl;
+        break;
+
+    case 3:
+        cout << " ------ 3.) KM -> M --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000 ;
+        cout <<  user << " * 1000  = " << rumus << " M " << endl;
+        break;
+
+    case 4 :
+        cout << " ------ 4.) KM -> DM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10000 ;
+        cout <<  user << " * 10000  = " << rumus << " DM " << endl;
+        break;
+
+    case 5 :
+        cout << " ------ 5.) KM -> CM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100000 ;
+        cout <<  user << " * 100000  = " << rumus << " CM " << endl;
+        break;
+
+    case 6 :
+        cout << " ------ 6.) KM -> MM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000000 ;
+        cout <<  user << " * 1000000  = " << rumus << " MM " << endl;
+        break;
+
+    case 7 :
+        cout << " ------ 7.) HM -> KM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " KM " << endl;
+        break;
+       
+    case 8 :
+        cout << " ------ 8.) HM -> DAM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " DAM " << endl;
+        break;
+
+    case 9:
+        cout << " ------ 9.) HM -> M --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " M " << endl;
+        break;
+
+    case 10:
+        cout << " ------ 10.) HM -> DM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000;
+        cout <<  user << " * 1000  = " << rumus << " DM " << endl;
+        break;
+
+    case 11:
+        cout << " ------ 11.) HM -> CM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10000;
+        cout <<  user << " * 10000  = " << rumus << " CM " << endl;
+        break;
+
+   case 12:
+        cout << " ------ 12.) HM -> MM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100000;
+        cout <<  user << " * 100000  = " << rumus << " MM " << endl;
+        break;
+
+    case 13:
+        cout << " ------ 13.) DAM -> KM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " KM " << endl;
+        break;
+
+    case 14:
+        cout << " ------ 14.) DAM -> HM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " HM " << endl;
+        break;
+
+    case 15:
+        cout << " ------ 15.) DAM -> M --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " M " << endl;
+        break;
+
+    case 16:
+        cout << " ------ 16.) DAM -> DM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " DM " << endl;
+        break;
+
+    case 17:
+        cout << " ------ 17.) DAM -> CM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000;
+        cout <<  user << " * 1000  = " << rumus << " CM " << endl;
+        break;
+
+    case 18:
+        cout << " ------ 18.) DAM -> MM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10000;
+        cout <<  user << " * 10000  = " << rumus << " MM " << endl;
+        break;
+
+    case 19:
+        cout << " ------ 19.) M -> KM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " KM " << endl;
+        break;
+
+    case 20:
+        cout << " ------ 20.) M -> HM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " HM " << endl;
+        break;
+
+    case 21:
+        cout << " ------ 21.) M -> DAM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " DAM " << endl;
+        break;
+
+    case 22:
+        cout << " ------ 22.) M -> DM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " DM " << endl;
+        break;
+
+    case 23:
+        cout << " ------ 23.) M -> CM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " CM " << endl;
+        break;
+
+    case 24:
+        cout << " ------ 24.) M -> MM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 1000;
+        cout <<  user << " / 1000  = " << rumus << " MM " << endl;
+        break;
+
+    case 25:
+        cout << " ------ 25.) DM -> KM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10000;
+        cout <<  user << " / 10000  = " << rumus1 << " KM " << endl;
+        break;
+
+    case 26:
+        cout << " ------ 26.) DM -> HM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " HM " << endl;
+        break;
+
+    case 27:
+        cout << " ------ 27.) DM -> DAM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " DAM " << endl;
+        break;
+
+    case 28:
+        cout << " ------ 28.) DM -> M --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " M " << endl;
+        break;
+
+    case 29:
+        cout << " ------ 29.) DM -> CM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " CM " << endl;
+        break;
+
+  case 30:
+        cout << " ------ 30.) DM -> MM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 100;
+        cout <<  user << " * 100  = " << rumus << " MM " << endl;
+        break;
+
+   case 31:
+        cout << " ------ 31.) CM -> KM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100000;
+        cout <<  user << " / 100000  = " << rumus1 << " KM " << endl;
+        break;
+
+    case 32:
+        cout << " ------ 32.) CM -> HM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10000;
+        cout <<  user << " / 10000  = " << rumus1 << " HM " << endl;
+        break;
+
+    case 33:
+        cout << " ------ 33.) CM -> DAM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " DAM " << endl;
+        break;
+
+    case 34:
+        cout << " ------ 34.) CM -> M --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " M " << endl;
+        break;
+
+    case 35:
+        cout << " ------ 35.) CM -> DM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " DM " << endl;
+        break;
+
+    case 36:
+        cout << " ------ 36.) CM -> MM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus = user * 10;
+        cout <<  user << " * 10  = " << rumus << " MM " << endl;
+        break;
+
+    case 37:
+        cout << " ------ 37.) MM -> KM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000000;
+        cout <<  user << " / 1000000  = " << rumus1 << " KM " << endl;
+        break;
+
+    case 38:
+        cout << " ------ 38.) MM -> HM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100000;
+        cout <<  user << " / 100000  = " << rumus1 << " HM " << endl;
+        break;
+
+    case 39:
+        cout << " ------ 39.) MM -> DAM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10000;
+        cout <<  user << " / 10000  = " << rumus1 << " DAM " << endl;
+        break;
+
+    case 40:
+        cout << " ------ 40.) MM -> M --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 1000;
+        cout <<  user << " / 1000  = " << rumus1 << " M " << endl;
+        break;
+
+    case 41:
+        cout << " ------ 41.) MM -> DM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 100;
+        cout <<  user << " / 100  = " << rumus1 << " DM " << endl;
+        break;
+
+    case 42:
+        cout << " ------ 41.) MM -> CM --------" << endl;
+        cout << "masukkan angka : "; cin >> user;
+        rumus1 = user / 10;
+        cout <<  user << " / 10  = " << rumus1 << " CM " << endl;
+        break;
+
+       default:
+       cout << "Pilihan tidak sesuai dengan tabel " << endl;
+       cout << "Silahkan masukkan pilihan anda sesuai dengan tabel " << endl;
+        break;
+
+       } cout << endl;
+       cout << "Ingin mencoba lagi [Y/N] ? "; 
+       cin >> j;
+}while (j == 'Y' || j == 'y');
+cout << "================================================"<< endl;
+cout << " Terima kasih telah menggunakan program ini " << endl;
+cout << " Made by Ikoc_winata " << endl;
+}

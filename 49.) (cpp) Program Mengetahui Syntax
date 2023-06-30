@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <typeinfo>
+using namespace std;
+
+int main() {
+    cout << "================================================" << endl;
+    cout << "Belajar Mengetahui Tipe Data Dalam Syntax C++" << endl;
+    cout << "================================================" << endl;
+    cout << endl;
+
+    cout << "1. TIPE DATA INTEGER" << endl;
+    int data_integer = 5;
+    cout << "   Data : " << data_integer << endl;
+    cout << "   Bertipe : " << typeid(data_integer).name() << endl;
+    cout << endl;
+
+    cout << "2. TIPE DATA FLOAT" << endl;
+    float data_float = 6.08;
+    cout << "   Data : " << data_float << endl;
+    cout << "   Bertipe : " << typeid(data_float).name() << endl;
+    cout << endl;
+
+    cout << "3. TIPE DATA STRING" << endl;
+    string data_string = "Ikko Cahya Awinata";
+    cout << "   Data : " << data_string << endl;
+    cout << "   Bertipe : " << typeid(data_string).name() << endl;
+    cout << endl;
+
+    cout << "4. TIPE DATA BOOLEAN (TRUE / FALSE)" << endl;
+    bool data_bool = true;
+    cout << "   Data : " << boolalpha << data_bool << endl;
+    cout << "   Bertipe : " << typeid(data_bool).name() << endl;
+    cout << endl;
+
+    return 0;
+}

@@ -110,8 +110,8 @@ case 4:
     cout << " Masukkan diameter lingkaran : ";
     cin>>d;
     Phi = 3.14;
-    rumus = 2 * Phi * d;
-    cout << "Rumusnya yaitu : '2*phi*d' = '2*3.14*" << d << endl;
+    rumus = Phi * d;
+    cout << "Rumusnya yaitu : 'phi*d' = '2*3.14*" << d << endl;
     cout << "Hasilnya adalah : " << rumus << " cm " << endl;
     cout << endl;
     break;

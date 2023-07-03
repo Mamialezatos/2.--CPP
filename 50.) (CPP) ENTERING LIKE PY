@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+void welcome(){
+    cout <<"=========================================" <<endl;
+    cout <<"        PROGRAM ENTERING LIKE PY"<< endl;
+    cout <<"==========================================" << endl;
+};
+
+
+int main() {
+welcome();
+   string input;
+    cout << "";
+    getline(cin, input);
+    cout << "i love you " << input <<endl;
+    return 0;
+}

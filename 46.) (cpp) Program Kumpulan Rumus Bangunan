@@ -58,7 +58,7 @@ void table(){
 
 int main(){
     char j;
-    float r,d,t,T, phi, Phi,rumus, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a;
+    float pytagoras, r,d,t,T, phi, Phi,rumus, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a;
     int pilihan,L_selimut,sisisegitiga,sqrt, akar,Lp_PS, rumus1, rumus2;
 sambutan();
 table();
@@ -443,14 +443,16 @@ case 29:
     cout << "===========================================================================" << endl;
     cout << "Masukkan jari-jari kerucut : " ; cin >> r;;
     cout << "Masukkan sisi kerucut : "; cin >> sisi;
-    phi = 3.14;
-    Phi = 22.0/7.0;
-    rumusa = Phi*r*sisi;
-    rumus = phi*r*sisi;
-    cout << "Rumus A yaitu : Luas = phi * r * sisi =  3.14 * " << r << " * " << sisi <<  " = " <<  rumus << endl;
-    cout << "Rumus B yaitu : Luas = phi * r * sisi =  22/7 * " << r << " * " << sisi << " = " << rumusa << endl;
-    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumus << " cm " << endl;
-    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumusa << " cm " << endl;
+    pytagoras = pow(r,2) + pow (sisi,2);
+    cout << ("hasil sisi segitiga yang hasilnya berbentuk akar : ", pytagoras);
+     sqrt = pow(pytagoras, 0.5);
+    rumus1 = 22.0/7.0*r*sqrt;
+    rumus2 = 3.14*r*sqrt;;
+    cout << " akar dari " << pytagoras << " adalah = " << sqrt << endl;
+    cout << "Rumus A yaitu : Luas = phi * r * sisi =  22/7 * " << r << " * " << sqrt <<  " = " <<  rumus1 << endl;
+    cout << "Rumus B yaitu : Luas = phi * r * sisi =  3.14 * " << r << " * " << sqrt <<  " = " <<  rumus2 << endl;
+    cout << "Hasilnya luas selimut (phi =22/7 ) : " << rumus1 << " cm " << endl;
+    cout << "Hasilnya luas selimut  (phi =3.14 ) : " << rumus2 << " cm " << endl;
     break;
 
 case 30:
@@ -458,16 +460,12 @@ case 30:
     cout << "===========================================================================" << endl;
     cout << "Masukkan jari-jari kerucut : " ; cin >> r;;
     cout << "Masukkan sisi kerucut : "; cin >> sisi;
-    phi = 3.14;
-    Phi = 22.0/7.0;
-    rumusa = Phi*r*sisi;
-    rumus = phi*r*sisi;
-    rumus1 = (Phi*r*sisi) + (Phi* pow(r,2));
-    rumus2 = (phi*r*sisi) + (Phi* pow(r,2));
-    cout << "Rumus A yaitu : Luas = (phi * r * sisi) + (phi * r pangkat 2 = ( 22/7 * " << r << " * " << sisi << " ) + (22/7 * " << pow(r,2) << " ) = " << rumus1 << endl;
-    cout << "Rumus B yaitu : Luas = (phi * r * sisi) + (phi * r pangkat 2 = ( 3.14 * " << r << " * " << sisi << " ) + (3.14 * " << pow(r,2) << " ) = " << rumus2 << endl;
-    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumus1 << " cm " << endl;
-    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumus2 << " cm " << endl;
+    rumus1 = (22.0/7.0 * r *(r + sisi));
+    rumus2 = (3.14 * r *(r + sisi));
+    cout << "Rumus A yaitu : Luas = (phi * r * (r + tinggi sisi) = 22/7 * " << r << " * ( " << r << " + " << sisi << " ) = " << rumus1 << endl;
+    cout << "Rumus A yaitu : Luas = (phi * r * (r + tinggi sisi) = 22/7 * " << r << " * ( " << r << " + " << sisi << " ) = " << rumus2 << endl;
+    cout << "Hasilnya luas permukaan kerucut (phi =22/7 ) : " << rumus1 << " cm " << endl;
+    cout << "Hasilnya luas permukaan kerucut (phi =3.14 ) : " << rumus2 << " cm " << endl;
     break;
 
 
@@ -476,14 +474,12 @@ case 31:
     cout << "===========================================================================" << endl;
     cout << "Masukkan jari-jari kerucut : " ; cin >> r;
     cout << "Masukkan tinggi kerucut : " ; cin >> T;
-    phi = 3.14;
-    Phi = 22.0/7.0;
-    rumusa = 1/3*Phi*pow(r,2)*T;
-    rumusb = 1/3*phi*pow(r,2)*T;
-    cout << "Rumus A yaitu : Luas = 1/3 * phi * r pangkat 2 * tinggi = 1/3 * 22/7 * " << pow (r,2) << " * " << T << " = " <<  rumusa << endl;
-    cout << "Rumus B yaitu : Luas = 1/3 * phi * r pangkat 2 * tinggi = 1/3 * 3.14 *" << pow (r,2) << " * " << T << " = " <<  rumusb << endl;
-    cout << "Hasilnya luas permukaan tabung (phi =22/7 ) : " << rumusa << " cm " << endl;
-    cout << "Hasilnya luas permukaan tabung (phi =3.14 ) : " << rumusb << "cm " << endl;
+    rumus1 = 1.0/3.0 * 22.0/7.0 * pow(r,2) * T;
+    rumus2 = 1.0/3.0 * 3.14 * pow(r,2) * T;
+    cout << "Rumus A yaitu : Luas = 1/3 * phi * r pangkat 2 * tinggi = 1/3 * 22/7 * " << pow (r,2) << " * " << T << " = " <<  rumus1 << endl;
+    cout << "Rumus B yaitu : Luas = 1/3 * phi * r pangkat 2 * tinggi = 1/3 * 3.14 *" << pow (r,2) << " * " << T << " = " <<  rumus2 << endl;
+    cout << "Hasilnya volume kerucut (phi =22/7 ) : " << rumus1 << " cm " << endl;
+    cout << "Hasilnya volume kerucut (phi =3.14 ) : " << rumus2 << "cm " << endl;
     break;
 
 

@@ -145,7 +145,7 @@ do{
     cout << "Masukkan suhu Reamur yang diketahui : "; 
     cin >> r;
     k = (5.0/4.0 * r)+ 273;
-    cout << "Rumusnya yaitu : 4/5 * (k - 273) = 4/5 * (" << r << " - 273) = " << k << endl;
+    cout << "Rumusnya yaitu : 5/4 * (k + 273) = 5/4 * (" << r << " + 273) = " << k << endl;
     cout << "Hasilnya adalah : " << k << " derajat Kelvin" << endl; 
     break;
  

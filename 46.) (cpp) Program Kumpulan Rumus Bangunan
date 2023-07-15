@@ -58,7 +58,7 @@ void table(){
 
 int main(){
     char j;
-    float pytagoras, r,d,t,T, phi, Phi,rumus, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a;
+    float pytagoras, r,d,t,T, phi, Phi,rumus, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a, lalas;
     int pilihan,L_selimut,sisisegitiga,sqrt, akar,Lp_PS, rumus1, rumus2;
 sambutan();
 table();
@@ -325,7 +325,8 @@ case 21:
     cout << "===========================================================================" << endl;
     cout << " Masukkan luas alas : " ; cin >> L_alas;
     cout << " Masukkan tinggi limas  : " ; cin >> t;
-    rumus = 1.0/3.0 * L_alas * t;
+    LALAS = L_alas * L_alas;
+    rumus = 1.0/3.0 * LALAS * t;
     cout <<"Rumusnya yaitu : Volume = 1/3 * Luas Alas * Tinggi = 1/3 * " << L_alas << " * " << t << " = " << rumus << endl;
     cout <<"hasilnya adalah : " << rumus << " cm " << endl;
     cout << endl;

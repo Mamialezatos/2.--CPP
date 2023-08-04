@@ -358,7 +358,7 @@ do{
         break;
 
     case 42:
-        cout << " ------ 41.) MM -> CM --------" << endl;
+        cout << " ------ 42.) MM -> CM --------" << endl;
         cout << "masukkan angka : "; cin >> user;
         rumus1 = user / 10;
         cout <<  user << " / 10  = " << rumus1 << " CM " << endl;

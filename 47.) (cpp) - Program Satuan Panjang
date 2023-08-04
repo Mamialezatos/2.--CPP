@@ -235,7 +235,7 @@ do{
         cout << " ------ 24.) M -> MM --------" << endl;
         cout << "masukkan angka : "; cin >> user;
         rumus = user * 1000;
-        cout <<  user << " / 1000  = " << rumus << " MM " << endl;
+        cout <<  user << " * 1000  = " << rumus << " MM " << endl;
         break;
 
     case 25:
